@@ -14,9 +14,11 @@ import org.eclipse.core.runtime.IProgressMonitor;
 public class DownloadWeibo {
 	public static void downloadPages(List<String> imgUrlList, IProgressMonitor monitor, File outputFolder) {
 		monitor.beginTask("正在下载", imgUrlList.size());
-		for (String imgUrl : imgUrlList) {
+		for (int i = 0; i < imgUrlList.size(); i++) {
 			if (monitor.isCanceled())
 				break;
+			String imgUrl = imgUrlList.get(i);
+			monitor.setTaskName("正在下载: "+i+"/"+imgUrlList.size());
 			monitor.subTask(imgUrl);
 			download(imgUrl, outputFolder);
 			monitor.worked(1);
