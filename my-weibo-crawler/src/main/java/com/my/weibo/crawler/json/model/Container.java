@@ -1,4 +1,4 @@
-package com.my.weibo.crawler.model;
+package com.my.weibo.crawler.json.model;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

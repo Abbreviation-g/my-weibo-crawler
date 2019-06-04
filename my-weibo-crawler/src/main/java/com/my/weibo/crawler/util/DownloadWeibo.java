@@ -1,4 +1,4 @@
-package com.my.weibo.crawler;
+package com.my.weibo.crawler.util;
 
 import java.io.File;
 import java.io.FileOutputStream;

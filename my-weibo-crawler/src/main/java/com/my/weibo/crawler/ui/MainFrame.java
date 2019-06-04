@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
@@ -24,8 +25,9 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.my.weibo.crawler.DownloadWeibo;
-import com.my.weibo.crawler.WeiboMainPage;
+import com.my.weibo.crawler.model.UidAnalyst;
+import com.my.weibo.crawler.model.WeiboMainPage;
+import com.my.weibo.crawler.util.DownloadWeibo;
 
 public class MainFrame {
 	private Shell parentShell;
@@ -66,8 +68,9 @@ public class MainFrame {
 		mainComposite.setLayoutData(new GridData(GridData.FILL_BOTH));
 		mainComposite.setLayout(new GridLayout(3, false));
 
-		new Label(mainComposite, SWT.NONE).setText("Weibo uid: ");
+		new Label(mainComposite, SWT.NONE).setText("Weibo url: ");
 		this.urlText = new Text(mainComposite, SWT.SINGLE | SWT.BORDER);
+		this.urlText.setToolTipText("Please enter the user's home page ");
 		GridData urlGD = new GridData(SWT.FILL, SWT.CENTER, true, false);
 		urlGD.minimumWidth = 600;
 		urlText.setLayoutData(urlGD);
@@ -118,6 +121,11 @@ public class MainFrame {
 			okButton.setEnabled(false);
 			return false;
 		} else {
+			try {
+				new URL(urlText.getText());
+			} catch (Exception e) {
+				okButton.setEnabled(false);
+			}
 			okButton.setEnabled(true);
 		}
 		return true;
@@ -150,17 +158,21 @@ public class MainFrame {
 	}
 
 	private void startDownload() {
-		String uidStr = urlText.getText();
+		String urlStr = urlText.getText();
 		String outputPath = pathText.getText();
 		okButton.setEnabled(false);
 		ProgressMonitorDialog dialog = new ProgressMonitorDialog(parentShell);
 		try {
 			dialog.run(true, true, (monitor) ->{
 				try {
-					WeiboMainPage mainPage = new WeiboMainPage(uidStr);
+					UidAnalyst uidAnalyst = new UidAnalyst(urlStr);
+					String uid = uidAnalyst.getUid();
+					String title = uidAnalyst.getTitle();
+					
+					WeiboMainPage mainPage = new WeiboMainPage(uid);
 					mainPage.scanForImg(monitor);
 					List<String> imgUrlList = mainPage.getRawImgUrlList();
-					DownloadWeibo.downloadPages(imgUrlList, monitor, new File(outputPath, uidStr));
+					DownloadWeibo.downloadPages(imgUrlList, monitor, new File(outputPath, title));
 				} catch (MalformedURLException e) {
 					System.err.println(e.getMessage());
 				} catch (IOException e) {

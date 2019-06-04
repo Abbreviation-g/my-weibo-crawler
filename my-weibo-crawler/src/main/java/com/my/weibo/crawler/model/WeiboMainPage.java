@@ -1,4 +1,4 @@
-package com.my.weibo.crawler;
+package com.my.weibo.crawler.model;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -18,10 +18,10 @@ import org.apache.http.util.EntityUtils;
 import org.eclipse.core.runtime.IProgressMonitor;
 
 import com.alibaba.fastjson.JSON;
-import com.my.weibo.crawler.model.Card;
-import com.my.weibo.crawler.model.Container;
-import com.my.weibo.crawler.model.Data;
-import com.my.weibo.crawler.model.Pic;
+import com.my.weibo.crawler.json.model.Card;
+import com.my.weibo.crawler.json.model.Container;
+import com.my.weibo.crawler.json.model.Data;
+import com.my.weibo.crawler.json.model.Pic;
 
 public class WeiboMainPage {
 	private String containerid;

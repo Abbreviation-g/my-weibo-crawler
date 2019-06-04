@@ -1,4 +1,4 @@
-package com.my.weibo.crawler.model;
+package com.my.weibo.crawler.json.model;
 
 public class Mblog {
 	private Pic[] pics;
