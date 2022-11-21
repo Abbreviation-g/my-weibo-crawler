@@ -67,6 +67,14 @@
 			<exclusions>
 				<exclusion>
 					<groupId>org.eclipse.platform</groupId>
+					<artifactId>org.eclipse.swt.gtk.linux.aarch64</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.platform</groupId>
+					<artifactId>org.eclipse.swt.gtk.linux.arm</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.platform</groupId>
 					<artifactId>org.eclipse.swt</artifactId>
 				</exclusion>
 			</exclusions>
@@ -108,14 +116,9 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.5</version>
-				<configuration>
-					<skipTests>true</skipTests>
-				</configuration>
-			</plugin>
+			<!-- surefire 插件用来在maven构建生命周期的test phase执行一个应用的单元测试 -->
+			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
+				<version>2.5</version> <configuration> <skipTests>true</skipTests> </configuration> </plugin> -->
 		</plugins>
 	</build>
 </project>
