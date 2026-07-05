@@ -22,6 +22,7 @@ import java.util.TreeMap;
  * <p>对应旧类“根据UID扫描所有weibo并解析pic和video”的核心流程：
  * 读取旧 pics_videos.log -> 仅扫描新增页 -> 解析图片/视频 -> 按旧 dateId 格式合并保存。</p>
  */
+@SuppressWarnings("unused")
 public final class ScanWeiboMain {
     static String folderBasePath = "F:\\weibo_log";
 
@@ -161,7 +162,6 @@ public final class ScanWeiboMain {
         扫描(Constants.明星1());
     }
 
-    @SuppressWarnings("unused")
     /** 保留旧代码中手工维护的零散账号扫描历史。 */
     private static void 开始扫描() throws IOException {
         start("3603256695", new File(folderBasePath, "梦醒忒远"));
@@ -366,7 +366,6 @@ public final class ScanWeiboMain {
         scan(uid, beginPage, 0, folder);
     }
 
-    @SuppressWarnings("unused")
     /** 扫描指定页范围，保留旧 start(uid, beginPage, endPage, folder) 调用形式。 */
     private static void start(String uid, int beginPage, int endPage, File folder) throws IOException {
         int maxPages = endPage <= beginPage ? 0 : endPage - beginPage;

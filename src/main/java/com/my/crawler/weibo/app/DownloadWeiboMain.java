@@ -28,6 +28,7 @@ import java.util.stream.Collectors;
  * 读取账号目录下 pics_videos.log -> 按旧文件名格式保存媒体 -> 维护 done.list/failed.list。
  * </p>
  */
+@SuppressWarnings("unused")
 public final class DownloadWeiboMain {
     private DownloadWeiboMain() {
     }
@@ -326,7 +327,6 @@ public final class DownloadWeiboMain {
         return lower.contains(".mov") || lower.contains("expires=");
     }
 
-    @SuppressWarnings("unused")
     /** 保留旧代码中手工维护的零散下载历史。 */
     private static void 下载() throws IOException {
         start(new File("F:/weibo_log", "梦醒忒远"), new File("H:\\weibo", "梦醒忒远"), "宋妍霏");
