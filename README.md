@@ -129,4 +129,8 @@ log: D:\temp\weibo_log
 output: D:\temp\weibo_log_output
 ```
 
-测试默认使用 `@Disabled`，避免普通构建时访问微博和下载文件。需要手动验证时，可临时取消 `@Disabled` 后运行。
+该测试会真实访问微博并写入 `D:\temp`，运行前请确认微博 Cookie 有效。只运行该测试可使用：
+
+```powershell
+mvn -q -Dtest=GuoSihuoIntegrationTest test
+```

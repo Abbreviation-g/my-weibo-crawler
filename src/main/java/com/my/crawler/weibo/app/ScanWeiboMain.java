@@ -1,6 +1,7 @@
 package com.my.crawler.weibo.app;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.my.crawler.weibo.client.WeiboClient;
 import com.my.crawler.weibo.config.AppConfig;
 import com.my.crawler.weibo.config.Constants;
@@ -392,6 +393,7 @@ public final class ScanWeiboMain {
             TreeMap<String, JsonNode> newLog = new PicVideoParser(mapper).parse(statuses);
             TreeMap<String, JsonNode> merged = new TreeMap<>(oldLog);
             merged.putAll(newLog);
+            removeScreenName(merged);
             historyStore.writePicVideoLog(merged);
 
             System.out.printf("statuses=%d newMediaPosts=%d totalMediaPosts=%d log=%s%n",
@@ -407,5 +409,14 @@ public final class ScanWeiboMain {
     /** 给聚合入口使用的扫描方法。 */
     public static void scan(AppConfig config) throws Exception {
         scan(config.uid(), config.beginPage(), config.maxPages(), config.accountLogDir().toFile());
+    }
+
+    /** 写回日志前清理旧历史中残留的 screen_name 字段。 */
+    private static void removeScreenName(TreeMap<String, JsonNode> log) {
+        for (JsonNode item : log.values()) {
+            if (item instanceof ObjectNode objectNode) {
+                objectNode.remove(Constants.SCREEN_NAME);
+            }
+        }
     }
 }

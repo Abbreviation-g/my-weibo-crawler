@@ -47,7 +47,7 @@ public final class PicVideoParser {
                 item.set(Constants.VIDEOS, videos);
             }
             item.put(Constants.TEXT_RAW, bestText(status));
-            addUserFields(status, id, item);
+            addPageUrl(status, id, item);
             addTags(status, item);
 
             LocalDate date = WeiboDate.parseCreatedAt(createdAt);
@@ -103,16 +103,12 @@ public final class PicVideoParser {
         }
     }
 
-    /** 添加 page_url 和 screen_name，便于从日志追溯原微博。 */
-    private static void addUserFields(JsonNode status, String id, ObjectNode item) {
+    /** 添加 page_url，便于从日志追溯原微博；扫描结果不再写入 screen_name。 */
+    private static void addPageUrl(JsonNode status, String id, ObjectNode item) {
         JsonNode user = status.path("user");
         String userId = user.path("idstr").asText(user.path("id").asText(""));
         if (!userId.isBlank()) {
             item.put(Constants.PAGE_URL, Constants.PAGE_URL_FORMAT.formatted(userId, id));
-        }
-        String screenName = user.path(Constants.SCREEN_NAME).asText("");
-        if (!screenName.isBlank()) {
-            item.put(Constants.SCREEN_NAME, screenName);
         }
     }
 
