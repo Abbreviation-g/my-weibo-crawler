@@ -80,6 +80,8 @@ public final class MediaDownloader {
                 continue;
             }
             if (downloadOne(url, target)) {
+                Constants.randomSleepShort();
+
                 done.add(doneKey);
                 downloaded++;
                 System.out.println("downloaded " + target);

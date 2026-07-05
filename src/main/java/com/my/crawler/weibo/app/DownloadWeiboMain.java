@@ -1,6 +1,8 @@
 package com.my.crawler.weibo.app;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.my.crawler.weibo.config.AppConfig;
 import com.my.crawler.weibo.config.Constants;
 import com.my.crawler.weibo.download.MediaDownloader;
@@ -33,73 +35,73 @@ public final class DownloadWeiboMain {
     /** 历史下载入口；保留旧 main 中通过注释切换任务的使用方式。 */
     public static void main(String[] args) throws IOException {
         // 下载MOVs();
+       
+        下载(Constants.欧阳娜娜(), "H:/weibo-" + "欧阳娜娜");
+        下载(Constants.宋妍霏(), "H:/weibo-" + "宋妍霏");
+        下载(Constants.王紫璇(), "H:/weibo-" + "王紫璇");
+        下载(Constants.赵露思(), "H:/weibo-" + "赵露思");
+        下载(Constants.张天爱(), "H:/weibo-" + "张天爱");
+        下载(Constants.王鸥(), "H:/weibo-" + "王鸥");
+        下载(Constants.娜扎(), "H:/weibo-" + "娜扎");
+        下载(Constants.林允(), "H:/weibo-" + "林允");
+        下载(Constants.韩雪(), "H:/weibo-" + "韩雪");
+        下载(Constants.关晓彤(), "H:/weibo-" + "关晓彤");
+        下载(Constants.吴宣仪(), "H:/weibo-" + "吴宣仪");
+        下载(Constants.热巴(), "H:/weibo-" + "热巴");
+        下载(Constants.宋祖儿(), "H:/weibo-" + "宋祖儿");
+        下载(Constants.程潇(), "H:/weibo-" + "程潇");
+        
+        下载(Constants.王玉雯(), "H:/weibo-" + "王玉雯");
+        下载(Constants.王秀竹(), "H:/weibo-" + "王秀竹");
+        下载(Constants.吴优(), "H:/weibo-" + "吴优");
+        下载(Constants.王楚然(), "H:/weibo-" + "王楚然");
+        下载(Constants.赵今麦(), "H:/weibo-" + "赵今麦");
+        下载(Constants.蒋依依(), "H:/weibo-" + "蒋依依");
+        下载(Constants.张婧仪(), "H:/weibo-" + "张婧仪");
+        下载(Constants.张予曦(), "H:/weibo-" + "张予曦");
+        下载(Constants.陈都灵(), "H:/weibo-" + "陈都灵");
+        下载(Constants.胡连馨(), "H:/weibo-" + "胡连馨");
+        下载(Constants.许佳琪(), "H:/weibo-" + "许佳琪");
+        下载(Constants.杨幂(), "H:/weibo-" + "杨幂");
+        下载(Constants.孟佳(), "H:/weibo-" + "孟佳");
+        下载(Constants.秦岚(), "H:/weibo-" + "秦岚");
+        下载(Constants.范冰冰(), "H:/weibo-" + "范冰冰");
+        下载(Constants.蔡文静(), "H:/weibo-" + "蔡文静");
+        下载(Constants.白鹿(), "H:/weibo-" + "白鹿");
+        下载(Constants.倪妮(), "H:/weibo-" + "倪妮");
+        下载(Constants.李一桐(), "H:/weibo-" + "李一桐");
+        下载(Constants.王鹤润(), "H:/weibo-" + "王鹤润");
+        下载(Constants.周洁琼(), "H:/weibo-" + "周洁琼");
+        下载(Constants.孟子义(), "H:/weibo-" + "孟子义");
+        下载(Constants.李沁(), "H:/weibo-" + "李沁");
+        下载(Constants.江疏影(), "H:/weibo-" + "江疏影");
+        下载(Constants.景甜(), "H:/weibo-" + "景甜");
+        
+        下载(Constants.孙芮(), "H:/weibo-" + "孙芮");
+        下载(Constants.周也(), "H:/weibo-" + "周也");
+        下载(Constants.章若楠(), "H:/weibo-" + "章若楠");
+        下载(Constants.杨超越(), "H:/weibo-" + "杨超越");
+        下载(Constants.鞠婧祎(), "H:/weibo-" + "鞠婧祎");
+        下载(Constants.傅菁(), "H:/weibo-" + "傅菁");
+        下载(Constants.田曦薇(), "H:/weibo-" + "田曦薇");
+        下载(Constants.钟楚曦(), "H:/weibo-" + "钟楚曦");
+        下载(Constants.张雪迎(), "H:/weibo-" + "张雪迎");
+        下载(Constants.辛芷蕾(), "H:/weibo-" + "辛芷蕾");
+        下载(Constants.曾黎(), "H:/weibo-" + "曾黎");
+        下载(Constants.刘诗诗(), "H:/weibo-" + "刘诗诗");
+        下载(Constants.代斯(), "H:/weibo-" + "代斯");
+        下载(Constants.梁洁(), "H:/weibo-" + "梁洁");
+        下载(Constants.张嘉倪(), "H:/weibo-" + "张嘉倪");
+        下载(Constants.徐璐(), "H:/weibo-" + "徐璐");
+        下载(Constants.艾米(), "H:/weibo-" + "艾米");
+        下载(Constants.黄梦莹(), "H:/weibo-" + "黄梦莹");
+        下载(Constants.虞书欣(), "H:/weibo-" + "虞书欣");
+        下载(Constants.黄杨钿甜(), "H:/weibo-" + "黄杨钿甜");
 
         // 下载部分生图();
-        // 下载(Constants.半年可见(), "H:/weibo-" + "半年可见");
-        // 下载(Constants.特别关注(), "H:/weibo-" + "特别关注");
-        // 下载(Constants.网红(), "H:/weibo-网红");
-        //
-        // 下载(Constants.欧阳娜娜(), "H:/weibo-" + "欧阳娜娜");
-        // 下载(Constants.宋妍霏(), "H:/weibo-" + "宋妍霏");
-        // 下载(Constants.王紫璇(), "H:/weibo-" + "王紫璇");
-        // 下载(Constants.赵露思(), "H:/weibo-" + "赵露思");
-        // 下载(Constants.张天爱(), "H:/weibo-" + "张天爱");
-        // 下载(Constants.王鸥(), "H:/weibo-" + "王鸥");
-        // 下载(Constants.娜扎(), "H:/weibo-" + "娜扎");
-        // 下载(Constants.林允(), "H:/weibo-" + "林允");
-        // 下载(Constants.韩雪(), "H:/weibo-" + "韩雪");
-        // 下载(Constants.关晓彤(), "H:/weibo-" + "关晓彤");
-        // 下载(Constants.吴宣仪(), "H:/weibo-" + "吴宣仪");
-        // 下载(Constants.热巴(), "H:/weibo-" + "热巴");
-        // 下载(Constants.宋祖儿(), "H:/weibo-" + "宋祖儿");
-        // 下载(Constants.程潇(), "H:/weibo-" + "程潇");
-        //
-        // 下载(Constants.王玉雯(), "H:/weibo-" + "王玉雯");
-        // 下载(Constants.王秀竹(), "H:/weibo-" + "王秀竹");
-        // 下载(Constants.吴优(), "H:/weibo-" + "吴优");
-        // 下载(Constants.王楚然(), "H:/weibo-" + "王楚然");
-        // 下载(Constants.赵今麦(), "H:/weibo-" + "赵今麦");
-        // 下载(Constants.蒋依依(), "H:/weibo-" + "蒋依依");
-        // 下载(Constants.张婧仪(), "H:/weibo-" + "张婧仪");
-        // 下载(Constants.张予曦(), "H:/weibo-" + "张予曦");
-        // 下载(Constants.陈都灵(), "H:/weibo-" + "陈都灵");
-        // 下载(Constants.胡连馨(), "H:/weibo-" + "胡连馨");
-        // 下载(Constants.许佳琪(), "H:/weibo-" + "许佳琪");
-        // 下载(Constants.杨幂(), "H:/weibo-" + "杨幂");
-        // 下载(Constants.孟佳(), "H:/weibo-" + "孟佳");
-        // 下载(Constants.秦岚(), "H:/weibo-" + "秦岚");
-        // 下载(Constants.范冰冰(), "H:/weibo-" + "范冰冰");
-        // 下载(Constants.蔡文静(), "H:/weibo-" + "蔡文静");
-        // 下载(Constants.白鹿(), "H:/weibo-" + "白鹿");
-        // 下载(Constants.倪妮(), "H:/weibo-" + "倪妮");
-        // 下载(Constants.李一桐(), "H:/weibo-" + "李一桐");
-        // 下载(Constants.王鹤润(), "H:/weibo-" + "王鹤润");
-        // 下载(Constants.周洁琼(), "H:/weibo-" + "周洁琼");
-        // 下载(Constants.孟子义(), "H:/weibo-" + "孟子义");
-        // 下载(Constants.李沁(), "H:/weibo-" + "李沁");
-        // 下载(Constants.江疏影(), "H:/weibo-" + "江疏影");
-        // 下载(Constants.景甜(), "H:/weibo-" + "景甜");
-        //
-        // 下载(Constants.孙芮(), "H:/weibo-" + "孙芮");
-        // 下载(Constants.周也(), "H:/weibo-" + "周也");
-        // 下载(Constants.章若楠(), "H:/weibo-" + "章若楠");
-        // 下载(Constants.杨超越(), "H:/weibo-" + "杨超越");
-        // 下载(Constants.鞠婧祎(), "H:/weibo-" + "鞠婧祎");
-        // 下载(Constants.傅菁(), "H:/weibo-" + "傅菁");
-        // 下载(Constants.田曦薇(), "H:/weibo-" + "田曦薇");
-        // 下载(Constants.钟楚曦(), "H:/weibo-" + "钟楚曦");
-        // 下载(Constants.张雪迎(), "H:/weibo-" + "张雪迎");
-        // 下载(Constants.辛芷蕾(), "H:/weibo-" + "辛芷蕾");
-        // 下载(Constants.曾黎(), "H:/weibo-" + "曾黎");
-        // 下载(Constants.刘诗诗(), "H:/weibo-" + "刘诗诗");
-        // 下载(Constants.代斯(), "H:/weibo-" + "代斯");
-        // 下载(Constants.梁洁(), "H:/weibo-" + "梁洁");
-        // 下载(Constants.张嘉倪(), "H:/weibo-" + "张嘉倪");
-        // 下载(Constants.徐璐(), "H:/weibo-" + "徐璐");
-        // 下载(Constants.艾米(), "H:/weibo-" + "艾米");
-        // 下载(Constants.黄梦莹(), "H:/weibo-" + "黄梦莹");
-        // 下载(Constants.虞书欣(), "H:/weibo-" + "虞书欣");
-        // 下载(Constants.黄杨钿甜(), "H:/weibo-" + "黄杨钿甜");
+        下载(Constants.半年可见(), "H:/weibo-" + "半年可见");
+        下载(Constants.特别关注(), "H:/weibo-" + "特别关注");
+        下载(Constants.网红(), "H:/weibo-网红");
         //
         // 下载明星1();
         // 下载明星2();
@@ -253,11 +255,75 @@ public final class DownloadWeiboMain {
         for (String weiboLogFolderName : weiboLogFolderNames) {
             System.out.println("-->>\t" + weiboLogFolderName);
             File weiboLogFolder = new File(mainWeiboLogFolder, weiboLogFolderName);
+            TreeMap<String, JsonNode> sourceLog = readPicVideoLogOnce(weiboLogFolder);
+            if (sourceLog.isEmpty()) {
+                continue;
+            }
             for (String searchKey : searchKeys) {
                 String subTitle = searchKey.replaceAll("[\\\\/:*?\"<>|]", "");
-                start(weiboLogFolder, new File(mainOutputFolder, subTitle), searchKey);
+                start(sourceLog, weiboLogFolder, new File(mainOutputFolder, subTitle), searchKey);
             }
         }
+    }
+
+    /** 为 searchAndDownload 读取一次账号媒体日志，避免同一目录按多个关键词重复读文件。 */
+    private static TreeMap<String, JsonNode> readPicVideoLogOnce(File weiboLogFolder) throws IOException {
+        HistoryStore historyStore = new HistoryStore(JsonSupport.mapper(), weiboLogFolder.toPath());
+        TreeMap<String, JsonNode> sourceLog = historyStore.readPicVideoLog();
+        if (sourceLog.isEmpty()) {
+            System.err.println(historyStore.picVideoLog() + "\t not exists or is empty.");
+        }
+        return sourceLog;
+    }
+
+    /** 使用已加载的日志执行关键词筛选下载，不再重复读取 pics_videos.log。 */
+    private static void start(TreeMap<String, JsonNode> sourceLog, File doneListFolder, File outputFolder,
+            String weiboStr) throws IOException {
+        try {
+            TreeMap<String, JsonNode> filteredLog = new TreeMap<>(sourceLog);
+            filteredLog.entrySet().removeIf(entry -> !matchText(entry.getValue(), weiboStr));
+            removeMovUrls(filteredLog);
+            MediaDownloader.DownloadStats stats = new MediaDownloader()
+                    .download(filteredLog, doneListFolder.toPath(), outputFolder.toPath(), false);
+            System.out.printf("downloaded=%d skipped=%d failed=%d output=%s%n",
+                    stats.downloaded(), stats.skipped(), stats.failed(), outputFolder);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IOException("下载微博媒体时被中断", e);
+        }
+    }
+
+    /** searchAndDownload 只下载图片，跳过 livephoto 里的 .mov 文件。 */
+    private static void removeMovUrls(TreeMap<String, JsonNode> log) {
+        log.entrySet().removeIf(entry -> {
+            JsonNode item = entry.getValue();
+            if (!(item instanceof ObjectNode objectNode)) {
+                return false;
+            }
+            JsonNode pics = objectNode.path(Constants.PICS);
+            if (!pics.isArray()) {
+                return false;
+            }
+            ArrayNode filteredPics = JsonSupport.mapper().createArrayNode();
+            for (JsonNode pic : pics) {
+                String url = pic.asText("");
+                if (!isMovUrl(url)) {
+                    filteredPics.add(url);
+                }
+            }
+            if (filteredPics.isEmpty()) {
+                objectNode.remove(Constants.PICS);
+            } else {
+                objectNode.set(Constants.PICS, filteredPics);
+            }
+            return objectNode.path(Constants.PICS).isMissingNode() && objectNode.path(Constants.VIDEOS).isMissingNode();
+        });
+    }
+
+    /** 判断 URL 是否为 livephoto/MOV，兼容带 Expires 参数的旧 URL。 */
+    private static boolean isMovUrl(String url) {
+        String lower = url.toLowerCase();
+        return lower.contains(".mov") || lower.contains("expires=");
     }
 
     @SuppressWarnings("unused")
