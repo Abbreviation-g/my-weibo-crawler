@@ -25,3 +25,4 @@ hs_err_pid*
 /my-weibo-crawler/.settings
 /my-weibo-crawler/target
 /my-weibo-crawler/.classpath
+target/
