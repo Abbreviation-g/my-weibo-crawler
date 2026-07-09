@@ -131,7 +131,7 @@ public class Constants {
         entities.add(new IDNameEntity("5230510382", "曾宥臻"));
         entities.add(new IDNameEntity("2382243211", "hThT__"));
         entities.add(new IDNameEntity("2017376052", "郭四火-"));
-        entities.add(new IDNameEntity("6363000838", "林允的小号r"));
+
         entities.add(new IDNameEntity("6634226106", "叶舒华_G-I-DLE"));
         entities.add(new IDNameEntity("5878805423", "BDD东"));
         entities.add(new IDNameEntity("7854658294", "镕馨二"));
@@ -268,7 +268,6 @@ public class Constants {
     /** 返回 "半年可见" 分组的微博账号列表。 */
     public static Set<IDNameEntity> 半年可见() {
         Set<IDNameEntity> entities = new LinkedHashSet<>();
-        entities.add(new IDNameEntity("1197755162", "韩雪"));
 
         entities.add(new IDNameEntity("8020633254", "鲨鱼夹会梦见电子羊吗"));
         entities.add(new IDNameEntity("7188609977", "程金铭JM"));
@@ -278,8 +277,7 @@ public class Constants {
         entities.add(new IDNameEntity("2655245350", "王梓薇"));
         entities.add(new IDNameEntity("1304048383", "李若嘉"));
         entities.add(new IDNameEntity("2269438254", "美娜呀美La"));
-        entities.add(new IDNameEntity("5644764907", "杨超越"));
-        entities.add(new IDNameEntity("5077791396", "黄杨钿甜"));
+
         entities.add(new IDNameEntity("5112071830", "张慧雯wen"));
         entities.add(new IDNameEntity("5408683366", "合诗雨Hermia"));
         entities.add(new IDNameEntity("2532395340", "吴柳芳"));
@@ -301,7 +299,7 @@ public class Constants {
         entities.add(new IDNameEntity("1604236990", "斓曦"));
         entities.add(new IDNameEntity("1722594714", "舒淇"));
         entities.add(new IDNameEntity("1725217600", "高海寧"));
-        entities.add(new IDNameEntity("1943405723", "钟楚曦"));
+
         entities.add(new IDNameEntity("1135822512", "倪虹洁"));
         entities.add(new IDNameEntity("1915458005", "刘湘_11"));
         entities.add(new IDNameEntity("1951027255", "李如儒"));
@@ -310,12 +308,12 @@ public class Constants {
         entities.add(new IDNameEntity("5392607329", "焕儿90210"));
         entities.add(new IDNameEntity("3987559881", "赵昭仪_Melek"));
         entities.add(new IDNameEntity("1907518591", "余霜YSCandice"));
-        entities.add(new IDNameEntity("1802626467", "M孟佳J"));
+
 //        entities.add(new IDNameEntity("7731444226", "明星生图大侦探"));
 //        entities.add(new IDNameEntity("6937940705", "金晨工作室"));
         entities.add(new IDNameEntity("1713031610", "金晨"));
 //        entities.add(new IDNameEntity("1577680003", "高叶ChLoe"));
-        entities.add(new IDNameEntity("1350995007", "我是娜扎"));
+
         entities.add(new IDNameEntity("1757744065", "蓝盈莹Lyric"));
         entities.add(new IDNameEntity("6321557477", "蓝盈莹工作室"));
         entities.add(new IDNameEntity("5658519205", "余冰慧的微博"));
@@ -325,18 +323,16 @@ public class Constants {
         entities.add(new IDNameEntity("1779963950", "张小斐0110"));
         entities.add(new IDNameEntity("1712539910", "陈乔恩"));
         entities.add(new IDNameEntity("1246850033", "徐冬冬"));
-        entities.add(new IDNameEntity("5790112354", "程潇"));
+
         entities.add(new IDNameEntity("1345566427", "佟丽娅"));
         entities.add(new IDNameEntity("6521611081", "食梦鲨"));
         entities.add(new IDNameEntity("7409360499", "小蓝蓝plus"));
-        entities.add(new IDNameEntity("2646681810", "林允Jelly"));
+
         entities.add(new IDNameEntity("1256018912", "张雯"));
-        entities.add(new IDNameEntity("3262625014", "唐艺昕工作室"));
-        entities.add(new IDNameEntity("1662068793", "唐艺昕"));
+
         entities.add(new IDNameEntity("2579189065", "聂小雨YU"));
         entities.add(new IDNameEntity("1642351362", "angelababy"));
-        entities.add(new IDNameEntity("1662262590", "张予曦"));
-        entities.add(new IDNameEntity("1221923871", "王鸥Angel"));
+
         entities.add(new IDNameEntity("7861479245", "佳怡一路佳境"));
 //        entities.add(new IDNameEntity("7650313931", "山一几Eleanor"));
         entities.add(new IDNameEntity("1547371213", "一栗莎子"));
@@ -385,16 +381,13 @@ public class Constants {
         entities.add(new IDNameEntity("1237024972", "白冰"));
         entities.add(new IDNameEntity("1247063043", "颜丹晨"));
 //        entities.add(new IDNameEntity("2602190401", "孙晓伦呀"));
-        entities.add(new IDNameEntity("1809054937", "李沁"));
-        entities.add(new IDNameEntity("6057355845", "李沁工作室"));
-        entities.add(new IDNameEntity("6020985643", "王鸥工作室"));
+
         entities.add(new IDNameEntity("1284876111", "万茜"));
         entities.add(new IDNameEntity("1340552632", "王丽坤"));
         entities.add(new IDNameEntity("1640016932", "张雨绮"));
         entities.add(new IDNameEntity("1192515960", "李冰冰"));
         entities.add(new IDNameEntity("1197191492", "刘涛tamia"));
-        entities.add(new IDNameEntity("1192329893", "秦岚"));
-        entities.add(new IDNameEntity("6062055731", "秦岚工作室"));
+
         entities.add(new IDNameEntity("1235576307", "马苏"));
         entities.add(new IDNameEntity("1231654104", "刘芸"));
         entities.add(new IDNameEntity("1213239282", "宋佳"));
@@ -404,17 +397,14 @@ public class Constants {
         entities.add(new IDNameEntity("1309862862", "苏青"));
         entities.add(new IDNameEntity("1246229612", "毛晓彤"));
         entities.add(new IDNameEntity("1858065064", "杨蓉"));
-        entities.add(new IDNameEntity("3952070245", "范冰冰"));
-        entities.add(new IDNameEntity("5644764907", "杨超越"));
-        entities.add(new IDNameEntity("3828809034", "-王楚然-"));
-        entities.add(new IDNameEntity("5620452341", "虞书欣Esther"));
+
         entities.add(new IDNameEntity("5397477824", "周雨彤微博"));
         entities.add(new IDNameEntity("1246788271", "李菲儿love"));
         entities.add(new IDNameEntity("5686102278", "张柏芝工作室"));
         entities.add(new IDNameEntity("6118375776", "张柏芝"));
         entities.add(new IDNameEntity("1259110474", "赵丽颖"));
         entities.add(new IDNameEntity("1934403631", "孙怡微博"));
-        entities.add(new IDNameEntity("1239315002", "张嘉倪"));
+
         entities.add(new IDNameEntity("1222062284", "张萌"));
         entities.add(new IDNameEntity("1347118243", "陳妍希michelle"));
         entities.add(new IDNameEntity("1662532110", "张佳宁"));
@@ -423,21 +413,20 @@ public class Constants {
         entities.add(new IDNameEntity("1756505825", "李小冉"));
         entities.add(new IDNameEntity("1313228221", "李佳桐sep"));
         entities.add(new IDNameEntity("1307243944", "李依晓"));
-        entities.add(new IDNameEntity("5796662600", "吴宣仪_Betty"));
+
         entities.add(new IDNameEntity("1773061573", "陈小纭"));
         entities.add(new IDNameEntity("1239439810", "施诗Kira"));
-        entities.add(new IDNameEntity("2607803303", "章若楠"));
+
         entities.add(new IDNameEntity("1741661732", "顾璇"));
-        entities.add(new IDNameEntity("2569522534", "孟子义"));
+
         entities.add(new IDNameEntity("1213395722", "黄奕"));
-        entities.add(new IDNameEntity("6671129497", "演员艾米"));
+
         entities.add(new IDNameEntity("1442378302", "米露"));
         entities.add(new IDNameEntity("1965681503", "林小宅"));
         entities.add(new IDNameEntity("1719397245", "JaniceMan文咏珊"));
-        entities.add(new IDNameEntity("1319911982", "张雪迎Sophie"));
-        entities.add(new IDNameEntity("1304194202", "刘诗诗"));
+
         entities.add(new IDNameEntity("1230663070", "唐嫣"));
-        entities.add(new IDNameEntity("1847672711", "徐璐LULU"));
+
         entities.add(new IDNameEntity("6519552504", "陈梦儿-myYY"));
         entities.add(new IDNameEntity("5991895370", "镕馨Rongxiiin"));
         return entities;
@@ -447,66 +436,49 @@ public class Constants {
     public static Set<IDNameEntity> 特别关注() {
         Set<IDNameEntity> entities = new LinkedHashSet<>();
         entities.add(new IDNameEntity("6221687685", "孙伊雯_"));
-        entities.add(new IDNameEntity("2687827715", "歐陽娜娜Nana"));
-        entities.add(new IDNameEntity("5943076204", "歐陽娜娜Nana工作室"));
-        entities.add(new IDNameEntity("6387099968", "张婧仪"));
-        entities.add(new IDNameEntity("7610808848", "张婧仪工作室"));
-        entities.add(new IDNameEntity("5617960493", "徐璐工作室"));
+
         entities.add(new IDNameEntity("1749964961", "张馨予"));
-        entities.add(new IDNameEntity("1669879400", "Dear-迪丽热巴"));
-        entities.add(new IDNameEntity("1549364094", "江疏影"));
-        entities.add(new IDNameEntity("2554404125", "倪妮V"));
-        entities.add(new IDNameEntity("2106192855", "赵今麦angel"));
+
         entities.add(new IDNameEntity("2389396110", "Fyuan方圆"));
-        entities.add(new IDNameEntity("1943405723", "钟楚曦"));
-        entities.add(new IDNameEntity("1913244047", "钟楚曦工作室"));
-        entities.add(new IDNameEntity("5187459538", "王秀竹"));
+
         entities.add(new IDNameEntity("3261134763", "刘亦菲"));
 //        entities.add(new IDNameEntity("5653796775", "赵露思的微博"));
-        entities.add(new IDNameEntity("1318119365", "蒋依依"));
+
         entities.add(new IDNameEntity("1644461042", "柳岩"));
         entities.add(new IDNameEntity("1320135280", "袁姗姗"));
-        entities.add(new IDNameEntity("1788283193", "Crystal张天爱"));
+
         entities.add(new IDNameEntity("2174204211", "唐嫣工作室"));
-        entities.add(new IDNameEntity("2007341923", "代斯daisy"));
+
 //        entities.add(new IDNameEntity("7720744067", "明星生图现场"));
 //        entities.add(new IDNameEntity("7543862954", "女明星生图-"));
         entities.add(new IDNameEntity("1659390800", "蒋梦婕"));
         entities.add(new IDNameEntity("2808966557", "李凱馨Eleanor"));
-        entities.add(new IDNameEntity("6323957970", "梁洁工作室"));
+
         entities.add(new IDNameEntity("1078007814", "徐娇"));
-        entities.add(new IDNameEntity("1941345837", "黄梦莹maggie"));
+
         entities.add(new IDNameEntity("6523291767", "吴千语工作室"));
         entities.add(new IDNameEntity("2626304873", "杨颖工作室"));
-        entities.add(new IDNameEntity("5704068886", "张予曦studio"));
+
         entities.add(new IDNameEntity("1774182292", "杨采钰Ora"));
         entities.add(new IDNameEntity("1738498871", "马思纯"));
         entities.add(new IDNameEntity("1656214784", "甘婷婷_TT"));
         entities.add(new IDNameEntity("3701937467", "Hello佟丽娅"));
         entities.add(new IDNameEntity("5368454432", "奚梦瑶Studio"));
         entities.add(new IDNameEntity("6219767932", "乔欣工作室"));
-        entities.add(new IDNameEntity("7555511345", "白鹿资讯站"));
-        entities.add(new IDNameEntity("6670517617", "赵今麦工作室official"));
+
         entities.add(new IDNameEntity("1262456801", "张歆艺"));
         entities.add(new IDNameEntity("6138359020", "毛晓彤工作室"));
         entities.add(new IDNameEntity("1819325063", "ice艾晓琪"));
         entities.add(new IDNameEntity("7473157651", "吴宣仪的快乐碎片"));
         entities.add(new IDNameEntity("5133022135", "热依扎官微"));
         entities.add(new IDNameEntity("5295502496", "袁姗姗工作室"));
-        entities.add(new IDNameEntity("5902979020", "江疏影工作室"));
-        entities.add(new IDNameEntity("7474425160", "程潇已上线"));
-        entities.add(new IDNameEntity("6001863056", "娜扎工作室"));
+
         entities.add(new IDNameEntity("3516848557", "王丽坤工作室"));
-        entities.add(new IDNameEntity("6100206722", "关晓彤工作室"));
-        entities.add(new IDNameEntity("3014125367", "倪妮工作室"));
-        entities.add(new IDNameEntity("5885799032", "林允Team"));
-        entities.add(new IDNameEntity("2804630987", "梁洁Little"));
+
         entities.add(new IDNameEntity("3034045004", "赵蕴卓同学"));
-        entities.add(new IDNameEntity("5455220518", "景甜Studio"));
+
         entities.add(new IDNameEntity("3867221552", "周冬雨工作室"));
-        entities.add(new IDNameEntity("2744950651", "杨幂工作室"));
-        entities.add(new IDNameEntity("6269329742", "嘉行迪丽热巴工作室"));
-        entities.add(new IDNameEntity("1769202531", "韩雪工作室"));
+
         return entities;
     }
 
