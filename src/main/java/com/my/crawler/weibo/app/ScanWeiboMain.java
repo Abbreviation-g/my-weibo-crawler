@@ -36,6 +36,7 @@ public final class ScanWeiboMain {
 //        扫描(Constants.特别关注());
 //        扫描(Constants.网红());
 
+//        扫描(Constants.唐艺昕());
 //        扫描(Constants.欧阳娜娜());
 //        扫描(Constants.宋妍霏());
 //        扫描(Constants.王紫璇());
@@ -100,8 +101,8 @@ public final class ScanWeiboMain {
 
 //        扫描(Constants.欧美());
 //        扫描(Constants.韩国());
-//        扫描日本写真();
-//        扫描(Constants.日本演员());
+    //    扫描日本写真();
+    //    扫描(Constants.日本演员());
 //        扫描明星图片();
         // 扫描明星1();
         // 扫描明星2();
@@ -164,10 +165,10 @@ public final class ScanWeiboMain {
 
     /** 保留旧代码中手工维护的零散账号扫描历史。 */
     private static void 开始扫描() throws IOException {
-        start("3603256695", new File(folderBasePath, "梦醒忒远"));
+        // start("3603256695", new File(folderBasePath, "梦醒忒远"));
 //        start("5077791396", new File(folderBasePath, "黄杨钿甜"));
-
-        start("6656508997", new File(folderBasePath, "周依然工作室"));
+        // start("7414925267", new File(folderBasePath, "姜珮瑶工作室"));
+        // start("6656508997", new File(folderBasePath, "周依然工作室"));
 //        start("1517846540", new File(folderBasePath, "王亚飞Yafei"));
 
 //        start("2269438254", new File(folderBasePath, "美娜呀美La"));

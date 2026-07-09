@@ -707,7 +707,8 @@ public class Constants {
     public static Set<IDNameEntity> 吴宣仪() {
         Set<IDNameEntity> entities = new LinkedHashSet<>();
         entities.add(new IDNameEntity("5796662600", "吴宣仪_Betty"));
-        entities.add(new IDNameEntity("7473157651", "吴宣仪的快乐碎片"));
+        entities.add(new IDNameEntity("9073402858", "五选一全要工作室"));
+        // entities.add(new IDNameEntity("7473157651", "吴宣仪的快乐碎片"));
 //        entities.add(new IDNameEntity("6872534285", "那年今日丨吴宣仪"));
         entities.add(new IDNameEntity("5608446239", "与归·吴宣仪"));
         entities.add(new IDNameEntity("7533435405", "RomanticBetty_吴宣仪"));
@@ -771,8 +772,18 @@ public class Constants {
         entities.add(new IDNameEntity("1769202531", "韩雪工作室"));
         entities.add(new IDNameEntity("7030655624", "Bewith韩雪资源小站"));
         entities.add(new IDNameEntity("6080303946", "Happy的哈皮小站"));
+        entities.add(new IDNameEntity("7993526185", "Neigeotter·韩雪"));
 
 //        entities.add(new IDNameEntity("7392463906", "素桃花债La"));
+        return entities;
+    }
+
+        /** 返回 "唐艺昕" 分组的微博账号列表。 */
+    public static Set<IDNameEntity> 唐艺昕() {
+        Set<IDNameEntity> entities = new LinkedHashSet<>();
+        entities.add(new IDNameEntity("1662068793", "唐艺昕"));
+        entities.add(new IDNameEntity("3262625014", "唐艺昕工作室"));
+        entities.add(new IDNameEntity("7999203320", "糖罐er_唐艺昕"));
         return entities;
     }
 
@@ -1666,6 +1677,7 @@ public class Constants {
     /** 返回 "明星1" 分组的微博账号列表。 */
     public static Set<IDNameEntity> 明星1() {
         Set<IDNameEntity> entities = new LinkedHashSet<>();
+        entities.add(new IDNameEntity("7414925267", "姜珮瑶工作室"));
         entities.add(new IDNameEntity("8402043366", "歐陽娣娣Didi工作室"));
         entities.add(new IDNameEntity("1197354837", "左小青"));
         entities.add(new IDNameEntity("1301064830", "柴蔚"));
