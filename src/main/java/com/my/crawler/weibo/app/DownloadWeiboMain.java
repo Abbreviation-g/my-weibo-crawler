@@ -36,81 +36,84 @@ public final class DownloadWeiboMain {
     /** 历史下载入口；保留旧 main 中通过注释切换任务的使用方式。 */
     public static void main(String[] args) throws IOException {
         // 下载MOVs();
-       
-        下载(Constants.唐艺昕(), "H:/weibo-" + "唐艺昕");
-        // 下载(Constants.欧阳娜娜(), "H:/weibo-" + "欧阳娜娜");
-        // 下载(Constants.宋妍霏(), "H:/weibo-" + "宋妍霏");
-        // 下载(Constants.王紫璇(), "H:/weibo-" + "王紫璇");
-        // 下载(Constants.赵露思(), "H:/weibo-" + "赵露思");
-        // 下载(Constants.张天爱(), "H:/weibo-" + "张天爱");
-        // 下载(Constants.王鸥(), "H:/weibo-" + "王鸥");
-        // 下载(Constants.娜扎(), "H:/weibo-" + "娜扎");
-        // 下载(Constants.林允(), "H:/weibo-" + "林允");
-        // 下载(Constants.韩雪(), "H:/weibo-" + "韩雪");
-        // 下载(Constants.关晓彤(), "H:/weibo-" + "关晓彤");
-        // 下载(Constants.吴宣仪(), "H:/weibo-" + "吴宣仪");
-        // 下载(Constants.热巴(), "H:/weibo-" + "热巴");
-        // 下载(Constants.宋祖儿(), "H:/weibo-" + "宋祖儿");
-        // 下载(Constants.程潇(), "H:/weibo-" + "程潇");
         
-        // 下载(Constants.王玉雯(), "H:/weibo-" + "王玉雯");
-        // 下载(Constants.王秀竹(), "H:/weibo-" + "王秀竹");
-        // 下载(Constants.吴优(), "H:/weibo-" + "吴优");
-        // 下载(Constants.王楚然(), "H:/weibo-" + "王楚然");
-        // 下载(Constants.赵今麦(), "H:/weibo-" + "赵今麦");
-        // 下载(Constants.蒋依依(), "H:/weibo-" + "蒋依依");
-        // 下载(Constants.张婧仪(), "H:/weibo-" + "张婧仪");
-        // 下载(Constants.张予曦(), "H:/weibo-" + "张予曦");
-        // 下载(Constants.陈都灵(), "H:/weibo-" + "陈都灵");
-        // 下载(Constants.胡连馨(), "H:/weibo-" + "胡连馨");
-        // 下载(Constants.许佳琪(), "H:/weibo-" + "许佳琪");
-        // 下载(Constants.杨幂(), "H:/weibo-" + "杨幂");
-        // 下载(Constants.孟佳(), "H:/weibo-" + "孟佳");
-        // 下载(Constants.秦岚(), "H:/weibo-" + "秦岚");
-        // 下载(Constants.范冰冰(), "H:/weibo-" + "范冰冰");
-        // 下载(Constants.蔡文静(), "H:/weibo-" + "蔡文静");
-        // 下载(Constants.白鹿(), "H:/weibo-" + "白鹿");
-        // 下载(Constants.倪妮(), "H:/weibo-" + "倪妮");
-        // 下载(Constants.李一桐(), "H:/weibo-" + "李一桐");
-        // 下载(Constants.王鹤润(), "H:/weibo-" + "王鹤润");
-        // 下载(Constants.周洁琼(), "H:/weibo-" + "周洁琼");
-        // 下载(Constants.孟子义(), "H:/weibo-" + "孟子义");
-        // 下载(Constants.李沁(), "H:/weibo-" + "李沁");
-        // 下载(Constants.江疏影(), "H:/weibo-" + "江疏影");
-        // 下载(Constants.景甜(), "H:/weibo-" + "景甜");
-        
-        // 下载(Constants.孙芮(), "H:/weibo-" + "孙芮");
-        // 下载(Constants.周也(), "H:/weibo-" + "周也");
-        // 下载(Constants.章若楠(), "H:/weibo-" + "章若楠");
-        // 下载(Constants.杨超越(), "H:/weibo-" + "杨超越");
-        // 下载(Constants.鞠婧祎(), "H:/weibo-" + "鞠婧祎");
-        // 下载(Constants.傅菁(), "H:/weibo-" + "傅菁");
-        // 下载(Constants.田曦薇(), "H:/weibo-" + "田曦薇");
-        // 下载(Constants.钟楚曦(), "H:/weibo-" + "钟楚曦");
-        // 下载(Constants.张雪迎(), "H:/weibo-" + "张雪迎");
-        // 下载(Constants.辛芷蕾(), "H:/weibo-" + "辛芷蕾");
-        // 下载(Constants.曾黎(), "H:/weibo-" + "曾黎");
-        // 下载(Constants.刘诗诗(), "H:/weibo-" + "刘诗诗");
-        // 下载(Constants.代斯(), "H:/weibo-" + "代斯");
-        // 下载(Constants.梁洁(), "H:/weibo-" + "梁洁");
-        // 下载(Constants.张嘉倪(), "H:/weibo-" + "张嘉倪");
-        // 下载(Constants.徐璐(), "H:/weibo-" + "徐璐");
-        // 下载(Constants.艾米(), "H:/weibo-" + "艾米");
-        // 下载(Constants.黄梦莹(), "H:/weibo-" + "黄梦莹");
-        // 下载(Constants.虞书欣(), "H:/weibo-" + "虞书欣");
-        // 下载(Constants.黄杨钿甜(), "H:/weibo-" + "黄杨钿甜");
-
         // 下载部分生图();
         // 下载(Constants.半年可见(), "H:/weibo-" + "半年可见");
         // 下载(Constants.特别关注(), "H:/weibo-" + "特别关注");
         // 下载(Constants.网红(), "H:/weibo-网红");
-        //
+       
+        下载(Constants.艾米(), "H:/weibo-" + "艾米");
+        下载(Constants.白鹿(), "H:/weibo-" + "白鹿");
+        下载(Constants.蔡文静(), "H:/weibo-" + "蔡文静");
+        下载(Constants.陈都灵(), "H:/weibo-" + "陈都灵");
+        下载(Constants.程潇(), "H:/weibo-" + "程潇");
+        下载(Constants.代斯(), "H:/weibo-" + "代斯");
+        下载(Constants.范冰冰(), "H:/weibo-" + "范冰冰");
+        下载(Constants.傅菁(), "H:/weibo-" + "傅菁");
+        下载(Constants.关晓彤(), "H:/weibo-" + "关晓彤");
+        下载(Constants.韩雪(), "H:/weibo-" + "韩雪");
+
+        下载(Constants.胡连馨(), "H:/weibo-" + "胡连馨");
+        下载(Constants.黄梦莹(), "H:/weibo-" + "黄梦莹");
+        下载(Constants.黄杨钿甜(), "H:/weibo-" + "黄杨钿甜");
+        下载(Constants.江疏影(), "H:/weibo-" + "江疏影");
+        下载(Constants.蒋依依(), "H:/weibo-" + "蒋依依");
+        下载(Constants.景甜(), "H:/weibo-" + "景甜");
+        下载(Constants.鞠婧祎(), "H:/weibo-" + "鞠婧祎");
+        下载(Constants.李沁(), "H:/weibo-" + "李沁");
+        下载(Constants.李一桐(), "H:/weibo-" + "李一桐");
+        下载(Constants.梁洁(), "H:/weibo-" + "梁洁");
+
+        下载(Constants.林允(), "H:/weibo-" + "林允");
+        下载(Constants.刘诗诗(), "H:/weibo-" + "刘诗诗");
+        下载(Constants.孟佳(), "H:/weibo-" + "孟佳");
+        下载(Constants.孟子义(), "H:/weibo-" + "孟子义");
+        下载(Constants.娜扎(), "H:/weibo-" + "娜扎");
+        下载(Constants.倪妮(), "H:/weibo-" + "倪妮");
+        下载(Constants.欧阳娜娜(), "H:/weibo-" + "欧阳娜娜");
+        下载(Constants.秦岚(), "H:/weibo-" + "秦岚");
+        下载(Constants.热巴(), "H:/weibo-" + "热巴");
+        下载(Constants.宋妍霏(), "H:/weibo-" + "宋妍霏");
+
+        下载(Constants.宋祖儿(), "H:/weibo-" + "宋祖儿");
+        下载(Constants.孙芮(), "H:/weibo-" + "孙芮");
+        下载(Constants.唐艺昕(), "H:/weibo-" + "唐艺昕");
+        下载(Constants.田曦薇(), "H:/weibo-" + "田曦薇");
+        下载(Constants.王楚然(), "H:/weibo-" + "王楚然");
+        下载(Constants.王鹤润(), "H:/weibo-" + "王鹤润");
+        下载(Constants.王鸥(), "H:/weibo-" + "王鸥");
+        下载(Constants.王秀竹(), "H:/weibo-" + "王秀竹");
+        下载(Constants.王玉雯(), "H:/weibo-" + "王玉雯");
+        下载(Constants.王紫璇(), "H:/weibo-" + "王紫璇");
+
+        下载(Constants.吴宣仪(), "H:/weibo-" + "吴宣仪");
+        下载(Constants.吴优(), "H:/weibo-" + "吴优");
+        下载(Constants.辛芷蕾(), "H:/weibo-" + "辛芷蕾");
+        下载(Constants.许佳琪(), "H:/weibo-" + "许佳琪");
+        下载(Constants.徐璐(), "H:/weibo-" + "徐璐");
+        下载(Constants.杨超越(), "H:/weibo-" + "杨超越");
+        下载(Constants.杨幂(), "H:/weibo-" + "杨幂");
+        下载(Constants.虞书欣(), "H:/weibo-" + "虞书欣");
+        下载(Constants.曾黎(), "H:/weibo-" + "曾黎");
+        下载(Constants.张嘉倪(), "H:/weibo-" + "张嘉倪");
+
+        下载(Constants.张婧仪(), "H:/weibo-" + "张婧仪");
+        下载(Constants.章若楠(), "H:/weibo-" + "章若楠");
+        下载(Constants.张天爱(), "H:/weibo-" + "张天爱");
+        下载(Constants.张雪迎(), "H:/weibo-" + "张雪迎");
+        下载(Constants.张予曦(), "H:/weibo-" + "张予曦");
+        下载(Constants.赵今麦(), "H:/weibo-" + "赵今麦");
+        下载(Constants.赵露思(), "H:/weibo-" + "赵露思");
+        下载(Constants.钟楚曦(), "H:/weibo-" + "钟楚曦");
+        下载(Constants.周洁琼(), "H:/weibo-" + "周洁琼");
+        下载(Constants.周也(), "H:/weibo-" + "周也");
+
         // 下载明星1();
         // 下载明星2();
         // 下载明星3();
         //
-        下载部分日本写真();
-        下载日本演员();
+        // 下载部分日本写真();
+        // 下载日本演员();
         下载();
 
         // 下载生图();
@@ -330,7 +333,7 @@ public final class DownloadWeiboMain {
 
     /** 保留旧代码中手工维护的零散下载历史。 */
     private static void 下载() throws IOException {
-        start(new File("F:/weibo_log", "梦醒忒远"), new File("H:\\weibo", "梦醒忒远"), "宋妍霏");
+        // start(new File("F:/weibo_log", "梦醒忒远"), new File("H:\\weibo", "梦醒忒远"), "宋妍霏");
         // start(new File("F:\\weibo_log\\洋气YOUNGCHIC"), new
         // File("F:\\weibo2\\洋气YOUNGCHIC"), "宋妍霏");
         // start(new File("F:\\weibo_log\\洋气YOUNGCHIC"), new
@@ -625,6 +628,7 @@ public final class DownloadWeiboMain {
         // start(new File("F:/weibo_log", "姚笛"), new File("H:\\weibo4", "姚笛"));
         // start(new File("F:/weibo_log", "林志玲"), new File("H:\\weibo4", "林志玲"));
         // start(new File("F:/weibo_log", "林志玲工作室"), new File("H:\\weibo4", "林志玲工作室"));
+        start(new File("F:/weibo_log", "姜珮瑶工作室"), new File("H:\\weibo4", "姜珮瑶工作室"));
     }
 
     /** 给测试或聚合入口使用的批量下载方法。 */
