@@ -19,8 +19,10 @@ import java.util.TreeMap;
 /**
  * 扫描微博并生成/合并 pics_videos.log。
  *
- * <p>对应旧类“根据UID扫描所有weibo并解析pic和video”的核心流程：
- * 读取旧 pics_videos.log -> 仅扫描新增页 -> 解析图片/视频 -> 按旧 dateId 格式合并保存。</p>
+ * <p>
+ * 对应旧类“根据UID扫描所有weibo并解析pic和video”的核心流程：
+ * 读取旧 pics_videos.log -> 仅扫描新增页 -> 解析图片/视频 -> 按旧 dateId 格式合并保存。
+ * </p>
  */
 @SuppressWarnings("unused")
 public final class ScanWeiboMain {
@@ -31,87 +33,89 @@ public final class ScanWeiboMain {
 
     /** 历史扫描入口；保留旧 main 中通过注释切换任务的使用方式。 */
     public static void main(String[] args) throws Exception {
-//        扫描生图();
-//        扫描(Constants.半年可见());
-//        扫描(Constants.特别关注());
-//        扫描(Constants.网红());
+        // 扫描生图();
+        // 扫描(Constants.半年可见());
+        // 扫描(Constants.特别关注());
+        // 扫描(Constants.网红());
 
-        扫描(Constants.艾米());
-        扫描(Constants.白鹿());
-        扫描(Constants.蔡文静());
-        扫描(Constants.陈都灵());
-        扫描(Constants.程潇());
-        扫描(Constants.代斯());
-        扫描(Constants.范冰冰());
-        扫描(Constants.傅菁());
-        扫描(Constants.关晓彤());
-        扫描(Constants.韩雪());
+        // 扫描(Constants.艾米());
+        // 扫描(Constants.白鹿());
+        // 扫描(Constants.蔡文静());
+        // 扫描(Constants.陈都灵());
+        // 扫描(Constants.程潇());
+        // 扫描(Constants.代斯());
+        // 扫描(Constants.黛薇卡());
+        // 扫描(Constants.范冰冰());
+        // 扫描(Constants.傅菁());
+        // 扫描(Constants.关晓彤());
 
-        扫描(Constants.胡连馨());
-        扫描(Constants.黄梦莹());
-        扫描(Constants.黄杨钿甜());
-        扫描(Constants.江疏影());
-        扫描(Constants.蒋依依());
-        扫描(Constants.景甜());
-        扫描(Constants.鞠婧祎());
-        扫描(Constants.李沁());
-        扫描(Constants.李一桐());
-        扫描(Constants.梁洁());
+        // 扫描(Constants.韩雪());
+        // 扫描(Constants.胡连馨());
+        // 扫描(Constants.黄梦莹());
+        // 扫描(Constants.黄杨钿甜());
+        // 扫描(Constants.江疏影());
+        // 扫描(Constants.蒋依依());
+        // 扫描(Constants.景甜());
+        // 扫描(Constants.鞠婧祎());
+        // 扫描(Constants.李沁());
+        // 扫描(Constants.李一桐());
 
-        扫描(Constants.林允());
-        扫描(Constants.刘诗诗());
-        扫描(Constants.孟佳());
-        扫描(Constants.孟子义());
-        扫描(Constants.娜扎());
-        扫描(Constants.倪妮());
-        扫描(Constants.欧阳娜娜());
-        扫描(Constants.秦岚());
-        扫描(Constants.热巴());
-        扫描(Constants.宋妍霏());
+        // 扫描(Constants.梁洁());
+        // 扫描(Constants.林允());
+        // 扫描(Constants.刘诗诗());
+        // 扫描(Constants.孟佳());
+        // 扫描(Constants.孟子义());
+        // 扫描(Constants.娜扎());
+        // 扫描(Constants.倪妮());
+        // 扫描(Constants.欧阳娜娜());
+        // 扫描(Constants.秦岚());
+        // 扫描(Constants.热巴());
 
-        扫描(Constants.宋祖儿());
-        扫描(Constants.孙芮());
-        扫描(Constants.唐艺昕());
-        扫描(Constants.田曦薇());
-        扫描(Constants.王楚然());
-        扫描(Constants.王鹤润());
-        扫描(Constants.王鸥());
-        扫描(Constants.王秀竹());
-        扫描(Constants.王玉雯());
-        扫描(Constants.王紫璇());
+        // 扫描(Constants.宋妍霏());
+        // 扫描(Constants.宋祖儿());
+        // 扫描(Constants.孙芮());
+        // 扫描(Constants.唐艺昕());
+        // 扫描(Constants.田曦薇());
+        // 扫描(Constants.王楚然());
+        // 扫描(Constants.王鹤润());
+        // 扫描(Constants.王鸥());
+        // 扫描(Constants.王秀竹());
+        // 扫描(Constants.王玉雯());
 
-        扫描(Constants.吴宣仪());
-        扫描(Constants.吴优());
-        扫描(Constants.辛芷蕾());
-        扫描(Constants.许佳琪());
-        扫描(Constants.徐璐());
-        扫描(Constants.杨超越());
-        扫描(Constants.杨幂());
-        扫描(Constants.虞书欣());
-        扫描(Constants.曾黎());
-        扫描(Constants.张嘉倪());
+        // 扫描(Constants.王紫璇());
+        // 扫描(Constants.吴宣仪());
+        // 扫描(Constants.吴优());
+        // 扫描(Constants.辛芷蕾());
+        // 扫描(Constants.许佳琪());
+        // 扫描(Constants.徐璐());
+        // 扫描(Constants.杨超越());
+        // 扫描(Constants.杨幂());
+        // 扫描(Constants.虞书欣());
+        // 扫描(Constants.曾黎());
 
-        扫描(Constants.张婧仪());
-        扫描(Constants.章若楠());
-        扫描(Constants.张天爱());
-        扫描(Constants.张雪迎());
-        扫描(Constants.张予曦());
-        扫描(Constants.赵今麦());
-        扫描(Constants.赵露思());
-        扫描(Constants.钟楚曦());
-        扫描(Constants.周洁琼());
-        扫描(Constants.周也());
+        // 扫描(Constants.张嘉倪());
+        // 扫描(Constants.张婧仪());
+        // 扫描(Constants.章若楠());
+        // 扫描(Constants.张天爱());
+        // 扫描(Constants.张雪迎());
+        // 扫描(Constants.张予曦());
+        // 扫描(Constants.赵今麦());
+        // 扫描(Constants.赵露思());
+        // 扫描(Constants.钟楚曦());
+        // 扫描(Constants.周洁琼());
 
-//        扫描(Constants.欧美());
-//        扫描(Constants.韩国());
-    //    扫描日本写真();
-    //    扫描(Constants.日本演员());
-//        扫描明星图片();
-        // 扫描明星1();
-        // 扫描明星2();
-        // 扫描明星3();
+        // 扫描(Constants.周也());
 
-       开始扫描();
+        // 扫描(Constants.欧美());
+        // 扫描(Constants.韩国());
+        // 扫描日本写真();
+        // 扫描(Constants.日本演员());
+        // 扫描(Constants.明星图片());
+        // 扫描(Constants.明星1());
+        // 扫描(Constants.明星2());
+        // 扫描(Constants.明星3());
+
+        开始扫描();
     }
 
     /** 批量扫描一个账号分组，扫描后沿用旧逻辑下载 livephoto MOV。 */
@@ -122,13 +126,6 @@ public final class ScanWeiboMain {
             Constants.randomSleepLong();
             DownloadWeiboMain.下载Mov2(entity);
         }
-    }
-
-    private static void 扫描欧美() throws Exception {
-        扫描(Constants.欧美());
-    }
-
-    private static void 扫描韩国() {
     }
 
     /** 扫描日本写真分组，但不触发 MOV 下载。 */
@@ -142,7 +139,7 @@ public final class ScanWeiboMain {
 
     /** 扫描生图分组，保留旧代码中独立循环的历史逻辑。 */
     private static void 扫描生图() throws Exception {
-//        扫描(Constants.生图());
+        // 扫描(Constants.生图());
         for (Constants.IDNameEntity entity : Constants.生图()) {
             System.out.println("id: " + entity.id + "\t name: " + entity.screen_name);
             start(entity.getId(), new File(folderBasePath, entity.screen_name));
@@ -150,114 +147,100 @@ public final class ScanWeiboMain {
         }
     }
 
-    private static void 扫描明星图片() throws Exception {
-        扫描(Constants.明星图片());
-    }
-
-    private static void 扫描明星3() throws Exception {
-        扫描(Constants.明星3());
-    }
-
-    private static void 扫描明星2() throws Exception {
-        扫描(Constants.明星2());
-    }
-
-    private static void 扫描明星1() throws Exception {
-        扫描(Constants.明星1());
-    }
-
     /** 保留旧代码中手工维护的零散账号扫描历史。 */
     private static void 开始扫描() throws IOException {
+        // start("5525995118", new File(folderBasePath, "我是一个小朋友小啊小朋友"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("5525995118", "我是一个小朋友小啊小朋友"));
         // start("3603256695", new File(folderBasePath, "梦醒忒远"));
-//        start("5077791396", new File(folderBasePath, "黄杨钿甜"));
+        // start("5077791396", new File(folderBasePath, "黄杨钿甜"));
         // start("7414925267", new File(folderBasePath, "姜珮瑶工作室"));
         // start("6656508997", new File(folderBasePath, "周依然工作室"));
-//        start("1517846540", new File(folderBasePath, "王亚飞Yafei"));
-
-//        start("2269438254", new File(folderBasePath, "美娜呀美La"));
-//        start("1230184540", new File(folderBasePath, "白庆琳的微博"));
-//        start("1312412824", new File(folderBasePath, "林志玲"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "林志玲"));
-//        start("6072304766", new File(folderBasePath, "林志玲工作室"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "林志玲工作室"));
-//        start("8402043366", new File(folderBasePath, "歐陽娣娣Didi工作室"));
-//        start("1373550167", new File(folderBasePath, "王思懿"));
-//        start("1604236990", new File(folderBasePath, "斓曦"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "斓曦"));
-//        start("1378010100", new File(folderBasePath, "王子文Ava"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1378010100", "王子文Ava"));
-//        start("1649540795", new File(folderBasePath, "郭小仙儿-郭珺"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1649540795", "郭小仙儿-郭珺"));
-//        start("1973763181", new File(folderBasePath, "徐沐婵Xx"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1973763181", "徐沐婵Xx"));
-//        start("1246788271", new File(folderBasePath, "李菲儿love"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1258859614", "李菲儿love"));
-//        start("7754982812", new File(folderBasePath, "小艾同学下课了吗"));
-//        start("1197354837", new File(folderBasePath, "左小青"));
-//        start("1301064830", new File(folderBasePath, "柴蔚"));
-//        start("5197213436", new File(folderBasePath, "金佳悦-"));
-//        start("1397341394", new File(folderBasePath, "_陳菲"));
-//        start("1734442735", new File(folderBasePath, "汪小敏"));
-//        start("2007347307", new File(folderBasePath, "孙佳奇Titania"));
-//        start("1758929805", new File(folderBasePath, "张馨月Carina"));
-//        start("1378010100", new File(folderBasePath, "王子文Ava"));
-//        start("1649540795", new File(folderBasePath, "郭小仙儿-郭珺"));
-//        start("1240008360", new File(folderBasePath, "王媛可"));
-//        start("1727687652", new File(folderBasePath, "章乐韵"));
-//        start("2433827884", new File(folderBasePath, "周依然6"));
-//        start("2595359142", new File(folderBasePath, "Yakisa彭雅琦"));
-//        start("1628482500", new File(folderBasePath, "陆妍淇"));
-//        start("1628482500", new File(folderBasePath, "陆妍淇"));
-//        start("1262719025", new File(folderBasePath, "毛林林NIKITA"));
-//        start("5408683366", new File(folderBasePath, "合诗雨Hermia"));
-//        start("7765311497", new File(folderBasePath, "明星生图严选"));
-//        start("5783471428", new File(folderBasePath, "刘承羽Natasha"));
-//        start("1301064830", new File(folderBasePath, "柴蔚"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("5408683366", "柴蔚"));
-//        start("3179885602", new File(folderBasePath, "钟晨瑶"));
-//        start("1749646275", new File(folderBasePath, "何雨桐MANGO"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("3179885602", "何雨桐MANGO"));
-//        start("7754982812", new File(folderBasePath, "小艾同学下课了吗"));
-//        start("3511260684", new File(folderBasePath, "_黃芯靈"));
-//        start("5525618252", new File(folderBasePath, "大鹅鹅Ran"));
-//        start("3833024804", new File(folderBasePath, "徐艺真的微博"));
-//        start("7983000031", new File(folderBasePath, "河北彩伽2"));
-//        start("3151770020", new File(folderBasePath, "蓝心妍工作室"));
-//        start("1265241322", new File(folderBasePath, "刘雨欣yoyoliu"));
-//        start("1752051394", new File(folderBasePath, "劉心悠Annie"));
-//        start("1281950453", new File(folderBasePath, "周扬"));
-//        start("2034565060", new File(folderBasePath, "许晴随行笔记"));
-//        start("5690339577", new File(folderBasePath, "Summer许晴工作室"));
-//        start("1214548420", new File(folderBasePath, "郭珍霓"));
-//        start("1258859614", new File(folderBasePath, "我是江一燕"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1258859614", "我是江一燕"));
-//        start("1890196401", new File(folderBasePath, "不2不叫周淑怡"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1890196401", "不2不叫周淑怡"));
-//        start("1890196401", new File(folderBasePath, "不2不叫周淑怡"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1890196401", "不2不叫周淑怡"));
-//        start("6650714202", new File(folderBasePath, "李凯馨Eleanor工作室"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("6650714202", "李凯馨Eleanor工作室"));
-//        start("6430354194", new File(folderBasePath, "杨采钰工作室"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("6430354194", "杨采钰工作室"));
-//        start("1006421732", new File(folderBasePath, "陈昊宇Amy"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1006421732", "陈昊宇Amy"));
-//        start("7661259195", new File(folderBasePath, "Official_权恩妃"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("7661259195", "Official_权恩妃"));
-//        start("3617364884", new File(folderBasePath, "彭小苒"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("3617364884", "彭小苒"));
-//        start("2111083372", new File(folderBasePath, "乔欣Bridgette"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("2111083372", "乔欣Bridgette"));
-//        start("3617364884", new File(folderBasePath, "彭小苒"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("3617364884", "彭小苒"));
-//        start("6203942537", new File(folderBasePath, "请往我的生活里加满糖谢谢"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("6203942537", "请往我的生活里加满糖谢谢"));
-//        start("5503504780", new File(folderBasePath, "吉娜爱丽丝Gina"));
-//        start("7772266364", new File(folderBasePath, "Rachelcook1995"));
-//        start("5638789392", new File(folderBasePath, "rachelcook14"));
-//        start("3807003830", new File(folderBasePath, "张若晞Roxie"));
-//        start("7284275957", new File(folderBasePath, "坠落星空·江疏影"));
-//        start("1807391080", new File(folderBasePath, "Constence刘彦池"));
-//        DownloadWeiboMain.下载Mov2(new IDNameEntity("1807391080", "Constence刘彦池"));
+        // start("1517846540", new File(folderBasePath, "王亚飞Yafei"));
+        // start("1215621210", new File(folderBasePath, "何琢言"));
+        // start("2269438254", new File(folderBasePath, "美娜呀美La"));
+        // start("1230184540", new File(folderBasePath, "白庆琳的微博"));
+        // start("1312412824", new File(folderBasePath, "林志玲"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "林志玲"));
+        // start("6072304766", new File(folderBasePath, "林志玲工作室"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "林志玲工作室"));
+        // start("8402043366", new File(folderBasePath, "歐陽娣娣Didi工作室"));
+        // start("1373550167", new File(folderBasePath, "王思懿"));
+        // start("1604236990", new File(folderBasePath, "斓曦"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1604236990", "斓曦"));
+        // start("1378010100", new File(folderBasePath, "王子文Ava"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1378010100", "王子文Ava"));
+        // start("1649540795", new File(folderBasePath, "郭小仙儿-郭珺"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1649540795", "郭小仙儿-郭珺"));
+        // start("1973763181", new File(folderBasePath, "徐沐婵Xx"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1973763181", "徐沐婵Xx"));
+        // start("1246788271", new File(folderBasePath, "李菲儿love"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1258859614", "李菲儿love"));
+        // start("7754982812", new File(folderBasePath, "小艾同学下课了吗"));
+        // start("1197354837", new File(folderBasePath, "左小青"));
+        // start("1301064830", new File(folderBasePath, "柴蔚"));
+        // start("5197213436", new File(folderBasePath, "金佳悦-"));
+        // start("1397341394", new File(folderBasePath, "_陳菲"));
+        // start("1734442735", new File(folderBasePath, "汪小敏"));
+        // start("2007347307", new File(folderBasePath, "孙佳奇Titania"));
+        // start("1758929805", new File(folderBasePath, "张馨月Carina"));
+        // start("1378010100", new File(folderBasePath, "王子文Ava"));
+        // start("1649540795", new File(folderBasePath, "郭小仙儿-郭珺"));
+        // start("1240008360", new File(folderBasePath, "王媛可"));
+        // start("1727687652", new File(folderBasePath, "章乐韵"));
+        // start("2433827884", new File(folderBasePath, "周依然6"));
+        // start("2595359142", new File(folderBasePath, "Yakisa彭雅琦"));
+        // start("1628482500", new File(folderBasePath, "陆妍淇"));
+        // start("1628482500", new File(folderBasePath, "陆妍淇"));
+        // start("1262719025", new File(folderBasePath, "毛林林NIKITA"));
+        // start("5408683366", new File(folderBasePath, "合诗雨Hermia"));
+        // start("7765311497", new File(folderBasePath, "明星生图严选"));
+        // start("5783471428", new File(folderBasePath, "刘承羽Natasha"));
+        // start("1301064830", new File(folderBasePath, "柴蔚"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("5408683366", "柴蔚"));
+        // start("3179885602", new File(folderBasePath, "钟晨瑶"));
+        // start("1749646275", new File(folderBasePath, "何雨桐MANGO"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("3179885602", "何雨桐MANGO"));
+        // start("7754982812", new File(folderBasePath, "小艾同学下课了吗"));
+        // start("3511260684", new File(folderBasePath, "_黃芯靈"));
+        // start("5525618252", new File(folderBasePath, "大鹅鹅Ran"));
+        // start("3833024804", new File(folderBasePath, "徐艺真的微博"));
+        // start("7983000031", new File(folderBasePath, "河北彩伽2"));
+        // start("3151770020", new File(folderBasePath, "蓝心妍工作室"));
+        // start("1265241322", new File(folderBasePath, "刘雨欣yoyoliu"));
+        // start("1752051394", new File(folderBasePath, "劉心悠Annie"));
+        // start("1281950453", new File(folderBasePath, "周扬"));
+        // start("2034565060", new File(folderBasePath, "许晴随行笔记"));
+        // start("5690339577", new File(folderBasePath, "Summer许晴工作室"));
+        // start("1214548420", new File(folderBasePath, "郭珍霓"));
+        // start("1258859614", new File(folderBasePath, "我是江一燕"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1258859614", "我是江一燕"));
+        // start("1890196401", new File(folderBasePath, "不2不叫周淑怡"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1890196401", "不2不叫周淑怡"));
+        // start("1890196401", new File(folderBasePath, "不2不叫周淑怡"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1890196401", "不2不叫周淑怡"));
+        // start("6650714202", new File(folderBasePath, "李凯馨Eleanor工作室"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("6650714202", "李凯馨Eleanor工作室"));
+        // start("6430354194", new File(folderBasePath, "杨采钰工作室"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("6430354194", "杨采钰工作室"));
+        // start("1006421732", new File(folderBasePath, "陈昊宇Amy"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1006421732", "陈昊宇Amy"));
+        // start("7661259195", new File(folderBasePath, "Official_权恩妃"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("7661259195", "Official_权恩妃"));
+        // start("3617364884", new File(folderBasePath, "彭小苒"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("3617364884", "彭小苒"));
+        // start("2111083372", new File(folderBasePath, "乔欣Bridgette"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("2111083372", "乔欣Bridgette"));
+        // start("3617364884", new File(folderBasePath, "彭小苒"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("3617364884", "彭小苒"));
+        // start("6203942537", new File(folderBasePath, "请往我的生活里加满糖谢谢"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("6203942537", "请往我的生活里加满糖谢谢"));
+        // start("5503504780", new File(folderBasePath, "吉娜爱丽丝Gina"));
+        // start("7772266364", new File(folderBasePath, "Rachelcook1995"));
+        // start("5638789392", new File(folderBasePath, "rachelcook14"));
+        // start("3807003830", new File(folderBasePath, "张若晞Roxie"));
+        // start("7284275957", new File(folderBasePath, "坠落星空·江疏影"));
+        // start("1807391080", new File(folderBasePath, "Constence刘彦池"));
+        // DownloadWeiboMain.下载Mov2(new IDNameEntity("1807391080", "Constence刘彦池"));
         // start("2595359142", new File(folderBasePath, "Yakisa彭雅琦"));
         // DownloadWeiboMain.下载Mov2(new IDNameEntity("2595359142", "Yakisa彭雅琦"));
         // start("6521611081", new File(folderBasePath, "食梦鲨"));

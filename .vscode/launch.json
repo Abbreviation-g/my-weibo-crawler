@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ScanWeiboMain",
+            "request": "launch",
+            "mainClass": "com.my.crawler.weibo.app.ScanWeiboMain",
+            "projectName": "my-weibo-crawler",
+            "encoding": "UTF-8",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "vmArgs": "-Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8",
+            "shortenCommandLine": "argfile"
+        },
+        {
+            "type": "java",
+            "name": "DownloadWeiboMain",
+            "request": "launch",
+            "mainClass": "com.my.crawler.weibo.app.DownloadWeiboMain",
+            "projectName": "my-weibo-crawler",
+            "encoding": "UTF-8",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "vmArgs": "-Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8",
+            "shortenCommandLine": "argfile"
+        },
+        {
+            "type": "java",
+            "name": "WeiboCrawlerApp",
+            "request": "launch",
+            "mainClass": "com.my.crawler.weibo.app.WeiboCrawlerApp",
+            "projectName": "my-weibo-crawler",
+            "encoding": "UTF-8",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "vmArgs": "-Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8",
+            "shortenCommandLine": "argfile"
+        }
+    ]
+}

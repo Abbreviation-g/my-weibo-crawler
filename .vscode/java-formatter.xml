@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles version="12">
+    <profile kind="CodeFormatterProfile" name="MyWeiboFormatter" version="12">
+        <setting id="org.eclipse.jdt.core.formatter.lineSplit" value="150"/>
+    </profile>
+</profiles>

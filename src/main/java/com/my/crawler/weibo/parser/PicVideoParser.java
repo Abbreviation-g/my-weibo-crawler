@@ -47,8 +47,9 @@ public final class PicVideoParser {
                 item.set(Constants.VIDEOS, videos);
             }
             item.put(Constants.TEXT_RAW, bestText(status));
-            addPageUrl(status, id, item);
-            addTags(status, item);
+            // pics_videos.log 中不再保留page_url
+            // addPageUrl(status, id, item);
+            // addTags(status, item);
 
             LocalDate date = WeiboDate.parseCreatedAt(createdAt);
             result.put(WeiboDate.dateId(date, id), item);

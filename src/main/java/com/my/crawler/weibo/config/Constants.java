@@ -7,6 +7,8 @@ import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
 
+import com.my.crawler.weibo.config.Constants.IDNameEntity;
+
 /**
  * 微博爬虫的常量、账号分组和搜索关键词配置。
  * 保留旧项目中的分组方法，方便沿用以前 main 方法里的扫描/下载历史。
@@ -109,6 +111,10 @@ public class Constants {
 //        entities.add(new IDNameEntity("1243273752", "古晨"));
 //        entities.add(new IDNameEntity("1749783560", "周扬青"));
 //        entities.add(new IDNameEntity("5777825630", "小宁姐姐real"));
+        entities.add(new IDNameEntity("7290873944", "周知意是我"));
+        entities.add(new IDNameEntity("1518297000", "严越Ivy"));
+        entities.add(new IDNameEntity("1884844450", "李万一"));
+        entities.add(new IDNameEntity("5628633263", "董琦kiki"));
         entities.add(new IDNameEntity("5851187900", "小豆苗儿1"));
         entities.add(new IDNameEntity("5366221094", "仲qiuqiu"));
         entities.add(new IDNameEntity("1910183793", "鲨鱼斗罗_"));
@@ -511,6 +517,7 @@ public class Constants {
         entities.add(new IDNameEntity("5494121361", "Papakey中国官方微博"));
         entities.add(new IDNameEntity("5161430241", "花家没有花"));
         entities.add(new IDNameEntity("7879961298", "凉森明里MiaMio"));
+        entities.add(new IDNameEntity("8330561406", "WCWC67"));
 //        entities.add(new IDNameEntity("3133475081", "旧时写真集"));
 //        entities.add(new IDNameEntity("7727697684", "ZERO摄影写真集"));
 //        entities.add(new IDNameEntity("7842543071", "永远的梦1988"));
@@ -666,6 +673,7 @@ public class Constants {
         entities.add(new IDNameEntity("5682365659", "-SLqiyu-"));
         entities.add(new IDNameEntity("5034775427", "死了都要喝奶茶"));
         entities.add(new IDNameEntity("8380425633", "Jellyous丨林允"));
+        entities.add(new IDNameEntity("8431339444", "StellarGrace丨林允"));
 //        entities.add(new IDNameEntity("5884985164", "BubbleTea丨林允"));
 //        entities.add(new IDNameEntity("7779944184", "Fairy丨0416林允Jelly"));
 //        entities.add(new IDNameEntity("6597139198", "霞思云想-林允"));
@@ -1776,6 +1784,7 @@ public class Constants {
     /** 返回 "明星2" 分组的微博账号列表。 */
     public static Set<IDNameEntity> 明星2() {
         Set<IDNameEntity> entities = new LinkedHashSet<>();
+        entities.add(new IDNameEntity("1215621210", "何琢言"));
         entities.add(new IDNameEntity("7904896004", "黛薇卡Mai"));
         entities.add(new IDNameEntity("2548926044", "林妍柔"));
         entities.add(new IDNameEntity("1747837917", "林逸欣Shara"));
@@ -2134,80 +2143,80 @@ public class Constants {
         return entities;
     }
 
-        /**
+    /**
      * 返回用于从生图/图站微博里筛选目标人物的关键词。
-     * 关键词按字符串顺序排序，并按每 10 个一组写入，便于维护和去重。
+     * 关键词按完整汉语拼音顺序排序，并按每 10 个一组写入，便于维护和去重。
      */
     public static Set<String> searchKeys1() {
-        Set<String> searchKeys = new TreeSet<>(Set.of());
-        searchKeys.addAll(Set.of("Angelababy", "baby", "阿娇", "艾晓琪", "白冰", "白鹿", "包上恩", "蔡文静", "蔡卓宜", "曾可妮"));
-        searchKeys.addAll(Set.of("曾黎", "陈都灵", "陈昊宇", "陈浩宇", "陈乔恩", "陈数", "陈瑶", "陈意涵", "陈紫函", "成果"));
-        searchKeys.addAll(Set.of("程潇", "大幂幂", "代斯", "丹琳", "董璇", "范冰冰", "方圆", "冯琳", "冯文娟", "傅菁"));
-        searchKeys.addAll(Set.of("甘婷婷", "高海宁", "高叶", "高圆圆", "宫胁咲良", "宮脇咲良", "巩俐", "谷爱凌", "关晓彤", "郭碧婷"));
-        searchKeys.addAll(Set.of("郭采洁", "郭珍霓", "韩雪", "何佩瑜", "何瑞贤", "何穗", "胡连馨", "黄梦莹", "黄杨钿甜", "霍思燕"));
-        searchKeys.addAll(Set.of("吉娜", "贾静雯", "江疏影", "江一燕", "姜珮瑶", "姜妍", "蒋梦婕", "蒋勤勤", "蒋欣", "蒋依依"));
-        searchKeys.addAll(Set.of("金晨", "金佳悦", "景甜", "鞠婧祎", "阚清子", "康可人", "克拉拉", "蓝心妍", "蓝燕", "蓝盈莹"));
-        searchKeys.addAll(Set.of("李冰冰", "李菲儿", "李佳桐", "李嘉欣", "李凯馨", "李兰迪", "李沁", "李溪芮", "李小冉", "李一桐"));
-        searchKeys.addAll(Set.of("李依晓", "李云霄", "梁洁", "梁田", "林允", "林志玲", "刘佳玺", "刘美含", "刘美彤", "刘萌萌"));
-        searchKeys.addAll(Set.of("刘芊螢", "刘倩", "刘诗诗", "刘涛", "刘雯", "刘湘", "刘芸", "柳岩", "璐璐", "露思"));
-        searchKeys.addAll(Set.of("马秋子", "马思纯", "麦迪娜", "毛林林", "毛晓彤", "孟广美", "孟佳", "孟子义", "苗苗", "娜比"));
-        searchKeys.addAll(Set.of("娜娜", "娜然", "娜扎", "奶潇", "倪妮", "宁心", "宁艺卓", "牛欣欣", "欧阳娣娣", "欧阳娜娜"));
-        searchKeys.addAll(Set.of("欧阳妮妮", "歐陽娣娣", "歐陽妮妮", "潘霜霜", "彭小苒", "彭雅琦", "秦岚", "邱淑贞", "热依扎", "人间富贵花"));
-        searchKeys.addAll(Set.of("姗姗", "沈羽洁", "诗诗", "舒畅", "舒淇", "宋佳", "宋妍", "宋妍霏", "宋祖儿", "苏青"));
-        searchKeys.addAll(Set.of("孙千", "孙芮", "孙耀琦", "孙怡", "唐艺昕", "田曦薇", "佟丽娅", "童瑶", "万茜", "王楚然"));
-        searchKeys.addAll(Set.of("王鹤润", "王鸥", "王秀竹", "王艳", "王玉雯", "王智", "王子文", "王梓薇", "王紫璇", "文咏珊"));
-        searchKeys.addAll(Set.of("吴千语", "吴宣仪", "吴优", "奚梦瑶", "夏梦", "向涵之", "潇潇", "辛芷蕾", "徐冬冬", "徐娇"));
-        searchKeys.addAll(Set.of("徐璐", "徐小舒", "许佳琪", "许晴", "宣璐", "宣仪", "薛凯琪", "杨采钰", "杨超越", "杨幂"));
-        searchKeys.addAll(Set.of("杨颖", "杨子姗", "叶璇", "易梦玲", "于文文", "虞书欣", "张纯烨", "张含韵", "张慧雯", "张嘉倪"));
-        searchKeys.addAll(Set.of("张婧仪", "张钧甯", "张凯莹", "张蓝心", "张曼源", "张萌", "张敏", "张天爱", "张彤", "张馨予"));
-        searchKeys.addAll(Set.of("张雪迎", "张予曦", "张雨绮", "张芷溪", "张梓琳", "章若楠", "赵韩樱子", "赵今麦", "赵柯", "赵露思"));
-        searchKeys.addAll(Set.of("赵樱子", "郑爽", "志玲", "钟楚曦", "钟丽缇", "钟欣桐", "钟欣潼", "周冬雨", "周洁琼", "周韦彤"));
-        searchKeys.addAll(Set.of("周秀娜", "周迅", "周也", "周依然", "周雨彤", "朱珠"));
+        Set<String> searchKeys = new LinkedHashSet<>();
+        searchKeys.addAll(List.of("Angelababy", "baby", "阿娇", "艾晓琪", "白冰", "白鹿", "包上恩", "蔡文静", "蔡卓宜", "陈都灵"));
+        searchKeys.addAll(List.of("陈昊宇", "陈浩宇", "陈乔恩", "陈数", "陈瑶", "陈意涵", "陈紫函", "成果", "程潇", "大幂幂"));
+        searchKeys.addAll(List.of("代斯", "丹琳", "董璇", "范冰冰", "方圆", "冯琳", "冯文娟", "傅菁", "甘婷婷", "高海宁"));
+        searchKeys.addAll(List.of("高叶", "高圆圆", "巩俐", "宫胁咲良", "宮脇咲良", "谷爱凌", "关晓彤", "郭碧婷", "郭采洁", "郭珍霓"));
+        searchKeys.addAll(List.of("韩雪", "何佩瑜", "何瑞贤", "何穗", "胡连馨", "黄梦莹", "黄杨钿甜", "霍思燕", "吉娜", "贾静雯"));
+        searchKeys.addAll(List.of("蒋梦婕", "姜珮瑶", "蒋勤勤", "江疏影", "蒋欣", "姜妍", "江一燕", "蒋依依", "金晨", "金佳悦"));
+        searchKeys.addAll(List.of("景甜", "鞠婧祎", "阚清子", "康可人", "克拉拉", "蓝心妍", "蓝燕", "蓝盈莹", "李冰冰", "李菲儿"));
+        searchKeys.addAll(List.of("李佳桐", "李嘉欣", "李凯馨", "李兰迪", "李沁", "李溪芮", "李小冉", "李一桐", "李依晓", "李云霄"));
+        searchKeys.addAll(List.of("梁洁", "梁田", "林允", "林志玲", "刘佳玺", "刘美含", "刘美彤", "刘萌萌", "刘倩", "刘芊螢"));
+        searchKeys.addAll(List.of("刘诗诗", "刘涛", "刘雯", "刘湘", "柳岩", "刘芸", "璐璐", "露思", "马秋子", "马思纯"));
+        searchKeys.addAll(List.of("麦迪娜", "毛林林", "毛晓彤", "孟广美", "孟佳", "孟子义", "苗苗", "娜比", "娜娜", "娜然"));
+        searchKeys.addAll(List.of("娜扎", "奶潇", "倪妮", "宁心", "宁艺卓", "牛欣欣", "欧阳娣娣", "歐陽娣娣", "欧阳娜娜", "欧阳妮妮"));
+        searchKeys.addAll(List.of("歐陽妮妮", "潘霜霜", "彭小苒", "彭雅琦", "秦岚", "邱淑贞", "热依扎", "人间富贵花", "姗姗", "沈羽洁"));
+        searchKeys.addAll(List.of("诗诗", "舒畅", "舒淇", "宋佳", "宋妍", "宋妍霏", "宋祖儿", "苏青", "孙千", "孙芮"));
+        searchKeys.addAll(List.of("孙耀琦", "孙怡", "唐艺昕", "田曦薇", "佟丽娅", "童瑶", "万茜", "王楚然", "王鹤润", "王鸥"));
+        searchKeys.addAll(List.of("王秀竹", "王艳", "王玉雯", "王智", "王梓薇", "王子文", "王紫璇", "文咏珊", "吴千语", "吴宣仪"));
+        searchKeys.addAll(List.of("吴优", "奚梦瑶", "夏梦", "向涵之", "潇潇", "辛芷蕾", "徐冬冬", "许佳琪", "徐娇", "徐璐"));
+        searchKeys.addAll(List.of("许晴", "徐小舒", "宣璐", "宣仪", "薛凯琪", "杨采钰", "杨超越", "杨幂", "杨颖", "杨子姗"));
+        searchKeys.addAll(List.of("叶璇", "易梦玲", "虞书欣", "于文文", "曾可妮", "曾黎", "张纯烨", "张含韵", "张慧雯", "张嘉倪"));
+        searchKeys.addAll(List.of("张婧仪", "张钧甯", "张凯莹", "张蓝心", "张曼源", "张萌", "张敏", "章若楠", "张天爱", "张彤"));
+        searchKeys.addAll(List.of("张馨予", "张雪迎", "张雨绮", "张予曦", "张芷溪", "张梓琳", "赵韩樱子", "赵今麦", "赵柯", "赵露思"));
+        searchKeys.addAll(List.of("赵樱子", "郑爽", "志玲", "钟楚曦", "钟丽缇", "钟欣桐", "钟欣潼", "周冬雨", "周洁琼", "周韦彤"));
+        searchKeys.addAll(List.of("周秀娜", "周迅", "周也", "周依然", "周雨彤", "朱珠"));
         return searchKeys;
     }
 
     /** 返回用于日本写真分组筛选下载的关键词。 */
     public static Set<String> searchKeys2() {
-        Set<String> searchKeys = new TreeSet<>(Set.of());
-//        searchKeys.addAll(Set.of("水川スミレ", "Miri Mizuki", "Emiri Momota", "水川堇", "百多えみり", "水喜れい", "水稀みり"));
-//        searchKeys.addAll(Set.of("小宵虎南"));
-//        searchKeys.addAll(Set.of("石川澪"));
-//        searchKeys.addAll(Set.of("西野翔"));
-//        searchKeys.addAll(Set.of("叶加濑麻衣"));
-//        searchKeys.addAll(Set.of("祝绪丹", "韩雪", "娜扎", "舒淇", "陈宝莲"));
-//        searchKeys.addAll(Set.of("櫻井音乃"));
-//        searchKeys.addAll(Set.of("八挂海"));
-//        searchKeys.addAll(Set.of("小野六花"));
-//        searchKeys.addAll(Set.of("本庄鈴","本庄铃"));
-//        searchKeys.addAll(Set.of("rachel cook"));
-//        searchKeys.addAll(Set.of("麻生希", "水菜丽"));
-//        searchKeys.addAll(Set.of("伊東紗冶子"));
-//        searchKeys.addAll(Set.of("高崎加奈美", "久保史绪里", "白间美瑠", "danatar"));
-//        searchKeys.addAll(Set.of("戸田れい", "户田玲香"));
-//        searchKeys.addAll(Set.of("明日葉みつは", "明日叶蜜"));
-//        searchKeys.addAll(Set.of("神菜美舞", "山岸逢花", "立花瑠莉", "白咲莉乃", "枫富爱", "藤森里穂"));
-//        searchKeys.addAll(Set.of("川口春奈", "Haruna Kawaguchi"));
-//        searchKeys.addAll(Set.of("矢吹春奈", "Haruna Yabuki", "阿部真理子"));
-//        searchKeys.addAll(Set.of("秋乃櫻子", "郭绮莉", "宝生桜子"));
-//        searchKeys.addAll(Set.of("松岛枫", "Kaede Matsushma"));
-//        searchKeys.addAll(Set.of("星野あかり", "星野明"));
-//        searchKeys.addAll(Set.of("一乃あおい"));
-//        searchKeys.addAll(Set.of("寺田兰世"));
-//        searchKeys.addAll(Set.of("つじもとあん", "An Tsujimoto"));
-//        searchKeys.addAll(Set.of("纱纱原百合", "Yuri Sasahara"));
-//        searchKeys.addAll(Set.of("八卦海", "Umi Yatsugake"));
-//        searchKeys.addAll(Set.of("FHM 男人幫", "男人帮"));
+        Set<String> searchKeys = new LinkedHashSet<>();
+//        searchKeys.addAll(List.of("水川スミレ", "Miri Mizuki", "Emiri Momota", "水川堇", "百多えみり", "水喜れい", "水稀みり"));
+//        searchKeys.addAll(List.of("小宵虎南"));
+//        searchKeys.addAll(List.of("石川澪"));
+//        searchKeys.addAll(List.of("西野翔"));
+//        searchKeys.addAll(List.of("叶加濑麻衣"));
+//        searchKeys.addAll(List.of("祝绪丹", "韩雪", "娜扎", "舒淇", "陈宝莲"));
+//        searchKeys.addAll(List.of("櫻井音乃"));
+//        searchKeys.addAll(List.of("八挂海"));
+//        searchKeys.addAll(List.of("小野六花"));
+//        searchKeys.addAll(List.of("本庄鈴","本庄铃"));
+//        searchKeys.addAll(List.of("rachel cook"));
+//        searchKeys.addAll(List.of("麻生希", "水菜丽"));
+//        searchKeys.addAll(List.of("伊東紗冶子"));
+//        searchKeys.addAll(List.of("高崎加奈美", "久保史绪里", "白间美瑠", "danatar"));
+//        searchKeys.addAll(List.of("戸田れい", "户田玲香"));
+//        searchKeys.addAll(List.of("明日葉みつは", "明日叶蜜"));
+//        searchKeys.addAll(List.of("神菜美舞", "山岸逢花", "立花瑠莉", "白咲莉乃", "枫富爱", "藤森里穂"));
+//        searchKeys.addAll(List.of("川口春奈", "Haruna Kawaguchi"));
+//        searchKeys.addAll(List.of("矢吹春奈", "Haruna Yabuki", "阿部真理子"));
+//        searchKeys.addAll(List.of("秋乃櫻子", "郭绮莉", "宝生桜子"));
+//        searchKeys.addAll(List.of("松岛枫", "Kaede Matsushma"));
+//        searchKeys.addAll(List.of("星野あかり", "星野明"));
+//        searchKeys.addAll(List.of("一乃あおい"));
+//        searchKeys.addAll(List.of("寺田兰世"));
+//        searchKeys.addAll(List.of("つじもとあん", "An Tsujimoto"));
+//        searchKeys.addAll(List.of("纱纱原百合", "Yuri Sasahara"));
+//        searchKeys.addAll(List.of("八卦海", "Umi Yatsugake"));
+//        searchKeys.addAll(List.of("FHM 男人幫", "男人帮"));
 //
-//        searchKeys.addAll(Set.of("AMAKI JUN", "天木じゅん", "天木纯", "JUN AMAKI", "天木じΦ"));
-//        searchKeys.addAll(Set.of("菊地則江", "松本日向", "祥子", "森咲智美"));
-//        searchKeys.addAll(Set.of("淸原なのは", "Nanoha Kiyohara"));
-//        searchKeys.addAll(Set.of("まつもと わかな", "Wakana Matsumoto", "Matsumoto Wakana"));
-//        searchKeys.addAll(Set.of("大槻响", "Hibiki Otsuki"));
-//        searchKeys.addAll(Set.of("天羽希純", "込山榛香", "架乃ゆら"));
-//        searchKeys.addAll(Set.of("美谷朱里", "阿部なつき", "阿部夏树"));
-//        searchKeys.addAll(Set.of("七森莉莉", "七ツ森りり", "東雲うみ","加美杏奈","吉田あかり","竹內花","日下部加奈","神宮寺ナオ","小倉七海"));
-//        searchKeys.addAll(Set.of("川村ゆきえ","藤乃あおい", "伊藤舞雪"));
-//        searchKeys.addAll(Set.of("凉森玲梦", "けん研","けんけん", "皆野みらい"));
+//        searchKeys.addAll(List.of("AMAKI JUN", "天木じゅん", "天木纯", "JUN AMAKI", "天木じΦ"));
+//        searchKeys.addAll(List.of("菊地則江", "松本日向", "祥子", "森咲智美"));
+//        searchKeys.addAll(List.of("淸原なのは", "Nanoha Kiyohara"));
+//        searchKeys.addAll(List.of("まつもと わかな", "Wakana Matsumoto", "Matsumoto Wakana"));
+//        searchKeys.addAll(List.of("大槻响", "Hibiki Otsuki"));
+//        searchKeys.addAll(List.of("天羽希純", "込山榛香", "架乃ゆら"));
+//        searchKeys.addAll(List.of("美谷朱里", "阿部なつき", "阿部夏树"));
+//        searchKeys.addAll(List.of("七森莉莉", "七ツ森りり", "東雲うみ","加美杏奈","吉田あかり","竹內花","日下部加奈","神宮寺ナオ","小倉七海"));
+//        searchKeys.addAll(List.of("川村ゆきえ","藤乃あおい", "伊藤舞雪"));
+//        searchKeys.addAll(List.of("凉森玲梦", "けん研","けんけん", "皆野みらい"));
         searchKeys.addAll(List.of("都丸纱也华", "都丸紗也華", "都丸 紗也華", "Tomaru Sayaka", "Sayaka Tomaru", "SayakaTomaru"));
         searchKeys.addAll(List.of("片山萌美", "片山 萌美", "Moemi Katayama", "かたやまもえみ", "かたやま もえみ"));
         searchKeys.addAll(List.of("出口亚梨沙", "出口亞梨沙", "出口亜梨沙", "Deguchi Arisa", "Arisa Deguchi", "でぐちありさ"));
@@ -2284,7 +2293,7 @@ public class Constants {
         searchKeys.addAll(List.of("ミッシェル愛美", "Michelle Megumi"));
         searchKeys.addAll(List.of("波崎天結", "Ayu Hazaki"));
         searchKeys.addAll(List.of("美之岛惠理", "美之嶋惠理", "美ノ嶋めぐり", "Meguri Minoshima"));
-        searchKeys.addAll(Set.of("纱纱原百合", "紗々原ゆり", "Yuri Sasahara"));
+        searchKeys.addAll(List.of("纱纱原百合", "紗々原ゆり", "Yuri Sasahara"));
         searchKeys.addAll(List.of("Jeong Ah", "Jeong-Ah", "정아"));
         searchKeys.addAll(List.of("HaNari", "하나리"));
         searchKeys.addAll(List.of("G.Su", "G.SU", "G.su", "g.su"));

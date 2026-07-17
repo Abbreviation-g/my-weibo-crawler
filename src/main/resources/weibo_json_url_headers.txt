@@ -1,4 +1,4 @@
-GET /ajax/statuses/mymblog HTTP/2
+GET /ajax/friendships/friends?page=1&uid=3603256695 HTTP/2
 Host: weibo.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko/20100101 Firefox/152.0
 Accept: application/json, text/plain, */*
@@ -6,12 +6,13 @@ Accept-Language: zh-CN,zh;q=0.9,zh-TW;q=0.8,zh-HK;q=0.7,en-US;q=0.6,en;q=0.5
 Accept-Encoding: gzip, deflate, br, zstd
 X-Requested-With: XMLHttpRequest
 client-version: 3.0.0
-server-version: v2026.07.01.3
-X-XSRF-TOKEN: 0uVLBn7OZYwziAYLNIihyic2
+server-version: v2026.07.16.2
+X-XSRF-TOKEN: K-sYiD8NGKgKhPX68Q2dvnDQ
 Connection: keep-alive
-Referer: https://weibo.com/
-Cookie: ULV=1779879878875:88:3:2:3131004358246.0776.1779879878259:1779707800083; SCF=Al6878gObG-auYH0VjcWfca5-PTawk43bcpxS_0AdU4y98CGQyvgyOJafxVE0lEWiZFudxB_93XBNS_6nXztIa0.; ALF=1785801919; SINAGLOBAL=6562303829612.367.1772284081442; SUB=_2A25HTe_vDeRhGeVI61ET9SjKwjmIHXVkI20nrDV8PUJbkNAbLW_NkW1NTAOtphBKpOztEDkKgr9u2uWkU2re9YKw; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFOy.hqXqwQGpGTla2erusc5JpX5KMhUgL.FoeceheESKqc1K-2dJLoI0YLxKqL1hnL1K2LxKML1-2L1hBLxKqLBKzLBKqLxKqL1heLBoeLxK-LBKBLB-2LxKnLB.qL1-eLxKBLB.2L1hqt; XSRF-TOKEN=0uVLBn7OZYwziAYLNIihyic2; WBPSESS=XMMIwdETR_JT96BLYlgiKdRbtXi8_udAJVxUz_5SaKY9HhqTHcFvn3klk_-W9c2FStb4y1x3iD8U7rCnVOZPuagn64VmuGTfC1DY8Z3Tpb79SbQMIarqons1aJ0FbAIbNXmSL45Ajy8sdPGXN8zRcw==
+Referer: https://weibo.com/u/page/follow/3603256695
+Cookie: ULV=1783834856254:89:1:1:5815650871543.29.1783834855896:1779879878875; SCF=Al6878gObG-auYH0VjcWfca5-PTawk43bcpxS_0AdU4y98CGQyvgyOJafxVE0lEWiZFudxB_93XBNS_6nXztIa0.; ALF=1786411697; SINAGLOBAL=6562303829612.367.1772284081442; SUB=_2A25HVp3hDeRhGeVI61ET9SjKwjmIHXVkLZ8prDV8PUJbkNAbLWvbkW1NTAOtpnDMQxo077v1_5NRTW2j5b6S6788; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WFOy.hqXqwQGpGTla2erusc5JpX5KMhUgL.FoeceheESKqc1K-2dJLoI0YLxKqL1hnL1K2LxKML1-2L1hBLxKqLBKzLBKqLxKqL1heLBoeLxK-LBKBLB-2LxKnLB.qL1-eLxKBLB.2L1hqt; XSRF-TOKEN=K-sYiD8NGKgKhPX68Q2dvnDQ; WBPSESS=XMMIwdETR_JT96BLYlgiKdRbtXi8_udAJVxUz_5SaKY9HhqTHcFvn3klk_-W9c2FStb4y1x3iD8U7rCnVOZPuet7T2Se0GDyAHpkX5jATJn0s3FgmToXlmvS8JAt8QylHjsrBfJg34pZfq5el4vwPw==
 Sec-Fetch-Dest: empty
 Sec-Fetch-Mode: cors
 Sec-Fetch-Site: same-origin
+Priority: u=0
 TE: trailers
